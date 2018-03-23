@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Outsourcing-Free-Api" />
+        <module name="Outsourcing-Free-Business-Web" />
+        <module name="Outsourcing-Free-Distributor-Web" />
+        <module name="Outsourcing-Free-Provider" />
+        <module name="Outsourcing-Free-Salesman-Web" />
+        <module name="Outsourcing-Free-Web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Outsourcing-Free" target="1.7" />
+      <module name="Outsourcing-Free-Api" target="1.7" />
+      <module name="Outsourcing-Free-Business-Web" target="1.7" />
+      <module name="Outsourcing-Free-Distributor-Web" target="1.7" />
+      <module name="Outsourcing-Free-Provider" target="1.7" />
+      <module name="Outsourcing-Free-Salesman-Web" target="1.7" />
+      <module name="Outsourcing-Free-Web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

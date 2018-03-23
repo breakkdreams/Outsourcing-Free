@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 自动生成（修改1：namespace；2 insertSelective 修改自增主键（删除id插入）；3修改增加select方法（表名修改） -->
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.BankDO">
+	<!-- 修改命名空间 -->
+	<resultMap id="Bank" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.BankDO">
+		<!-- -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+		<result column="bank_img_url" jdbcType="VARCHAR" property="bankImgUrl" />
+		<result column="color" jdbcType="VARCHAR" property="color" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="shows" jdbcType="INTEGER" property="shows" />
+
+	</resultMap>
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, bank_name, bank_img_url, color, deleted, create_time, update_time,shows
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="Bank">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		<!-- -->
+		delete from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<!-- 修改自增主键id -->
+	<insert id="insert" parameterType="BankDO"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into <include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="bankName != null">
+				bank_name,
+			</if>
+			<if test="bankImgUrl != null">
+				bank_img_url,
+			</if>
+			<if test="color != null">
+				color,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+			<if test="shows != null">
+				shows,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="bankName != null">
+				#{bankName,jdbcType=VARCHAR},
+			</if>
+			<if test="bankImgUrl != null">
+				#{bankImgUrl,jdbcType=VARCHAR},
+			</if>
+			<if test="color != null">
+				#{color,jdbcType=VARCHAR},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=BIT},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="shows != null">
+				#{shows,jdbcType=INTEGER},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.BankDO">
+		<!-- -->
+		update <include refid="tableName" />
+		<set>
+			<if test="bankName != null">
+				bank_name = #{bankName,jdbcType=VARCHAR},
+			</if>
+			<if test="bankImgUrl != null">
+				bank_img_url = #{bankImgUrl,jdbcType=VARCHAR},
+			</if>
+			<if test="color != null">
+				color = #{color,jdbcType=VARCHAR},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=BIT},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="shows != null">
+				shows = #{shows,jdbcType=INTEGER},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+
+
+	<!-- **************************** 修改增加select begin********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		bank
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="Bank">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="shows != null"> and shows = #{shows}</if>
+			<if test="bankName != null"> and bank_name = #{bankName}</if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="shows != null"> and shows = #{shows}</if>
+			<if test="bankName != null"> and bank_name = #{bankName}</if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+	resultMap="Bank">
+	${sql}
+	</select>
+<!-- **************************** 修改增加select end********************************* -->
+
+
+</mapper>

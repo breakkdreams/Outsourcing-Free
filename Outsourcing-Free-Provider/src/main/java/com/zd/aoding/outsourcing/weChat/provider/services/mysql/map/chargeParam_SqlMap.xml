@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 自动生成（修改1：namespace；2 insertSelective 修改自增主键（删除id插入）；3修改增加select方法（表名修改） -->
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ChargeParamDO">
+	<!-- 修改命名空间 -->
+	<resultMap id="ChargeParam" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ChargeParamDO">
+		<!-- -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+		<result column="first_week" jdbcType="DOUBLE" property="firstWeek" />
+		<result column="first_month" jdbcType="DOUBLE" property="firstMonth" />
+		<result column="first_season" jdbcType="DOUBLE" property="firstSeason" />
+		<result column="total_money" jdbcType="DOUBLE" property="totalMoney" />
+		<result column="distributor_id" jdbcType="INTEGER" property="distributorId" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, start_time, first_week,first_month,first_season,total_money, distributor_id, deleted, create_time, update_time
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="ChargeParam">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		<!-- -->
+		delete from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<!-- 修改自增主键id -->
+	<insert id="insert" parameterType="ChargeParamDO"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into <include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="startTime != null">
+				start_time,
+			</if>
+			<if test="firstWeek != null">
+				first_week,
+			</if>
+			<if test="firstMonth != null">
+				first_month,
+			</if>
+			<if test="firstSeason != null">
+				first_season,
+			</if>
+			<if test="totalMoney != null">
+				total_money,
+			</if>
+			<if test="distributorId != null">
+				distributor_id,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="startTime != null">
+				#{startTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="firstWeek != null">
+				#{firstWeek,jdbcType=DOUBLE},
+			</if>
+			<if test="firstMonth != null">
+				#{firstMonth,jdbcType=DOUBLE},
+			</if>
+			<if test="firstSeason != null">
+				#{firstSeason,jdbcType=DOUBLE},
+			</if>
+			<if test="totalMoney != null">
+				#{totalMoney,jdbcType=DOUBLE},
+			</if>
+			<if test="distributorId != null">
+				#{distributorId,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=BIT},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ChargeParamDO">
+		<!-- -->
+		update <include refid="tableName" />
+		<set>
+			<if test="startTime != null">
+				start_time = #{startTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="firstWeek != null">
+				first_week = #{firstWeek,jdbcType=DOUBLE},
+			</if>
+			<if test="firstMonth != null">
+				first_month = #{firstMonth,jdbcType=DOUBLE},
+			</if>
+			<if test="firstSeason != null">
+				first_season = #{firstSeason,jdbcType=DOUBLE},
+			</if>
+			<if test="totalMoney != null">
+				total_money = #{totalMoney,jdbcType=DOUBLE},
+			</if>
+			<if test="distributorId != null">
+				distributor_id = #{distributorId,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=BIT},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+
+
+	<!-- **************************** 修改增加select begin********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		charge_param
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="ChargeParam">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="distributorId != null"> and distributor_id = #{distributorId}</if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="distributorId != null"> and distributor_id = #{distributorId}</if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+	resultMap="ChargeParam">
+	${sql}
+	</select>
+<!-- **************************** 修改增加select end********************************* -->
+
+
+</mapper>

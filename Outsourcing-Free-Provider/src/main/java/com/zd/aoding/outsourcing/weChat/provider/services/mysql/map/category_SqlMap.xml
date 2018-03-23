@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.CategoryDO">
+  <resultMap id="BaseResultMap" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.CategoryDO">
+    <!--          -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="object_id" jdbcType="VARCHAR" property="objectId" />
+    <result column="logo_img_url" jdbcType="VARCHAR" property="logoImgUrl" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="parent_category_id" jdbcType="INTEGER" property="parentCategoryId" />
+    <result column="lever" jdbcType="INTEGER" property="lever" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="position" jdbcType="INTEGER" property="position" />
+    <result column="index_logo" jdbcType="VARCHAR" property="indexLogo" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--          -->
+    id, object_id, logo_img_url, name, parent_category_id, lever,status, create_time, update_time,
+    deleted,sort,position,index_logo
+  </sql>
+  <select id="selectPk" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--          -->
+    select 
+    <include refid="Base_Column_List" />
+    from category
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--          -->
+    delete from category
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insert" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.CategoryDO" useGeneratedKeys="true" keyProperty="id">
+    <!--          -->
+    insert into category
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="objectId != null">
+        object_id,
+      </if>
+      <if test="logoImgUrl != null">
+        logo_img_url,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="parentCategoryId != null">
+        parent_category_id,
+      </if>
+      <if test="lever != null">
+        lever,
+      </if>
+      <if test="status != null">
+          status,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="deleted != null">
+        deleted,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="position != null">
+        position,
+      </if>
+      <if test="indexLogo != null">
+        index_logo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="objectId != null">
+        #{objectId,jdbcType=VARCHAR},
+      </if>
+      <if test="logoImgUrl != null">
+        #{logoImgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="parentCategoryId != null">
+        #{parentCategoryId,jdbcType=INTEGER},
+      </if>
+      <if test="lever != null">
+        #{lever,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deleted != null">
+        #{deleted,jdbcType=INTEGER},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="position != null">
+        #{position,jdbcType=INTEGER},
+      </if>
+      <if test="indexLogo != null">
+        #{indexLogo,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.CategoryDO">
+    <!--          -->
+    update category
+    <set>
+      <if test="objectId != null">
+        object_id = #{objectId,jdbcType=VARCHAR},
+      </if>
+      <if test="logoImgUrl != null">
+        logo_img_url = #{logoImgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="parentCategoryId != null">
+        parent_category_id = #{parentCategoryId,jdbcType=INTEGER},
+      </if>
+      <if test="lever != null">
+        lever = #{lever,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deleted != null">
+        deleted = #{deleted,jdbcType=INTEGER},
+      </if>
+      <if test="sort != null">
+        sort = #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="position != null">
+       	position = #{position,jdbcType=INTEGER},
+      </if>
+      <if test="indexLogo != null">
+       index_logo = #{indexLogo,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		category
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+
+			<if test="sort != null"> and sort = #{sort}</if>
+			<if test="position != null"> and position = #{position}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="lever != null"> and lever = #{lever}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="id != null"> and id = #{id}</if>
+			<if test="parentCategoryId != null"> and parent_category_id = #{parentCategoryId}</if>
+			<if test="name != null"> and name like CONCAT('%',#{name},'%')</if>
+		</where>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="sort != null"> and sort = #{sort}</if>
+			<if test="position != null"> and position = #{position}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="lever != null"> and lever = #{lever}</if>
+			<if test="id != null"> and id = #{id}</if>
+			<if test="parentCategoryId != null"> and parent_category_id = #{parentCategoryId}</if>
+			<if test="name != null"> and name like CONCAT('%',#{name},'%')</if>
+		</where>
+	</select>
+</mapper>

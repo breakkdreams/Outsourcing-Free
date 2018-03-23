@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace用于java代码调用时识别指定xml的mapper文件 -->
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ZFBOrder">
+	<!-- 配置ORM映射 -->
+	<resultMap id="ZFBOrder" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ZFBOrder">
+		<id property="zfbId" column="zfbid" javaType="int" jdbcType="INTEGER" />
+		<result property="notify_time" column="notify_time" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="notify_type" column="notify_type" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="notify_id" column="notify_id" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="sign_type" column="sign_type" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="sign" column="sign" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="out_trade_no" column="out_trade_no" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="subject" column="subject" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="payment_type" column="payment_type" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="trade_no" column="trade_no" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="seller_id" column="seller_id" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="seller_email" column="seller_email" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="buyer_id" column="buyer_id" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="buyer_email" column="buyer_email" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="body" column="body" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="trade_status" column="trade_status" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="gmt_create" column="gmt_create" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="gmt_payment" column="gmt_payment" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="is_total_fee_adjust" column="is_total_fee_adjust"
+			javaType="String" jdbcType="VARCHAR" />
+		<result property="use_coupon" column="use_coupon" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="discount" column="discount" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="refund_status" column="refund_status"
+			javaType="String" jdbcType="VARCHAR" />
+		<result property="gmt_refund" column="gmt_refund" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="userId" column="userid" javaType="int"
+			jdbcType="INTEGER" />
+		<result property="trade_status" column="trade_status" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="orderType" column="ordertype" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="orderId" column="orderid" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="total_fee" column="total_fee" javaType="Double"
+			jdbcType="DOUBLE" />
+		<result property="money" column="money" javaType="Double"
+			jdbcType="DOUBLE" />
+		<result property="quantity" column="quantity" javaType="int"
+			jdbcType="INTEGER" />
+		<result property="price" column="price" javaType="Double"
+			jdbcType="DOUBLE" />
+
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		<!-- ****************************javaType 对应 jdbcType 类型 ********************************* -->
+		<!-- <result property="FLD_NUMBER" column="FLD_NUMBER" javaType="double" 
+			jdbcType="NUMERIC"/> <result property="FLD_VARCHAR" column="FLD_VARCHAR" 
+			javaType="string" jdbcType="VARCHAR"/> <result property="FLD_DATE" column="FLD_DATE" 
+			javaType="java.sql.Date" jdbcType="DATE"/> <result property="FLD_INTEGER" 
+			column="FLD_INTEGER" javaType="int" jdbcType="INTEGER"/> <result property="FLD_DOUBLE" 
+			column="FLD_DOUBLE" javaType="double" jdbcType="DOUBLE"/> <result property="FLD_LONG" 
+			column="FLD_LONG" javaType="long" jdbcType="INTEGER"/> <result property="FLD_CHAR" 
+			column="FLD_CHAR" javaType="string" jdbcType="CHAR"/> <result property="FLD_BLOB" 
+			column="FLD_BLOB" javaType="[B" jdbcType="BLOB" /> <result property="FLD_CLOB" 
+			column="FLD_CLOB" javaType="string" jdbcType="CLOB"/> <result property="FLD_FLOAT" 
+			column="FLD_FLOAT" javaType="float" jdbcType="FLOAT"/> <result property="FLD_TIMESTAMP" 
+			column="FLD_TIMESTAMP" javaType="java.sql.Timestamp" jdbcType="TIMESTAMP"/> -->
+	</resultMap>
+
+
+	<!-- **************************** insert ********************************* -->
+	<insert id="insert" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ZFBOrder"
+		useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO
+		zfborder_info(
+		notify_time,
+		notify_type,
+		notify_id,
+		sign_type,
+		sign,
+		out_trade_no,
+		subject,
+		payment_type,
+		trade_no,
+		trade_status,
+		seller_id,
+		seller_email,
+		buyer_id,
+		buyer_email,
+		body,
+		gmt_create,
+		gmt_payment,
+		is_total_fee_adjust,
+		use_coupon,
+		discount,
+		<!-- userId,
+		orderType,
+		orderId, -->
+		total_fee,
+		quantity,
+		price,
+		create_time)
+		VALUES
+		(
+		#{notify_time,jdbcType=VARCHAR},
+		#{notify_type,jdbcType=VARCHAR},
+		#{notify_id,jdbcType=VARCHAR},
+		#{sign_type,jdbcType=VARCHAR},
+		#{sign,jdbcType=VARCHAR},
+		#{out_trade_no,jdbcType=VARCHAR},
+		#{subject,jdbcType=VARCHAR},
+		#{payment_type,jdbcType=VARCHAR},
+		#{trade_no,jdbcType=VARCHAR},
+		#{trade_status,jdbcType=VARCHAR},
+		#{seller_id,jdbcType=VARCHAR},
+		#{seller_email,jdbcType=VARCHAR},
+		#{buyer_id,jdbcType=VARCHAR},
+		#{buyer_email,jdbcType=VARCHAR},
+		#{body,jdbcType=VARCHAR},
+		#{gmt_create,jdbcType=VARCHAR},
+		#{gmt_payment,jdbcType=VARCHAR},
+		#{is_total_fee_adjust,jdbcType=VARCHAR},
+		#{use_coupon,jdbcType=VARCHAR},
+		#{discount,jdbcType=VARCHAR},
+		<!-- #{userId,jdbcType=INTEGER},
+		#{orderType,jdbcType=VARCHAR},
+		#{orderId,jdbcType=VARCHAR}, -->
+
+		#{total_fee,jdbcType=DOUBLE},
+		#{quantity,jdbcType=INTEGER},
+		#{price,jdbcType=DOUBLE},
+		#{createTime,jdbcType=TIMESTAMP})
+	</insert>
+	<!-- **************************** select ********************************* -->
+	<select id="selectPk" parameterType="int" resultMap="ZFBOrder">
+		SELECT
+		*
+		FROM
+		zfborder_info
+		WHERE zfbid = #{zfbId}
+	</select>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="ZFBOrder">
+		SELECT
+		*
+		FROM zfborder_info
+		<where>
+
+			<if test="orderId != null">and orderid = #{orderId}</if>
+			<if test="notify_id != null">and notify_id = #{notify_id}</if>
+			<if test="deleted != null">and deleted = #{deleted}</if>
+		</where>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM zfborder_info
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		zfborder_info
+		<where>
+			<if test="orderId != null">and orderid = #{orderId}</if>
+			<if test="notify_id != null">and notify_id = #{notify_id}</if>
+			<if test="deleted != null">and deleted = #{deleted}</if>
+		</where>
+	</select>
+
+
+
+
+	<!-- **************************** update ********************************* -->
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ZFBOrder">
+		UPDATE zfborder_info
+		<set>
+			<if test="isDeleted != null"> is_deleted = #{isDeleted,jdbcType=INTEGER},</if>
+			<if test="updateTs != null"> updatets = #{updateTs,jdbcType=BIGINT}
+			</if>
+		</set>
+		<where>
+			<if test="zfbId != null">
+				zfbid = #{zfbId}
+			</if>
+		</where>
+	</update>
+	<!-- *************************************慎用！！物理删除*delete******************************************************** -->
+	<delete id="delete" parameterType="java.lang.Short">
+		delete from zfborder_info
+		where zfbid = #{zfbId}
+	</delete>
+
+</mapper>
+
+	

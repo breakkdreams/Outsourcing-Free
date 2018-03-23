@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Outsourcing-Free.iml" filepath="$PROJECT_DIR$/Outsourcing-Free.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Outsourcing-Free-Api/Outsourcing-Free-Api.iml" filepath="$PROJECT_DIR$/Outsourcing-Free-Api/Outsourcing-Free-Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Outsourcing-Free-Business-Web/Outsourcing-Free-Business-Web.iml" filepath="$PROJECT_DIR$/Outsourcing-Free-Business-Web/Outsourcing-Free-Business-Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Outsourcing-Free-Distributor-Web/Outsourcing-Free-Distributor-Web.iml" filepath="$PROJECT_DIR$/Outsourcing-Free-Distributor-Web/Outsourcing-Free-Distributor-Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Outsourcing-Free-Provider/Outsourcing-Free-Provider.iml" filepath="$PROJECT_DIR$/Outsourcing-Free-Provider/Outsourcing-Free-Provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Outsourcing-Free-Salesman-Web/Outsourcing-Free-Salesman-Web.iml" filepath="$PROJECT_DIR$/Outsourcing-Free-Salesman-Web/Outsourcing-Free-Salesman-Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Outsourcing-Free-Web/Outsourcing-Free-Web.iml" filepath="$PROJECT_DIR$/Outsourcing-Free-Web/Outsourcing-Free-Web.iml" />
+    </modules>
+  </component>
+</project>

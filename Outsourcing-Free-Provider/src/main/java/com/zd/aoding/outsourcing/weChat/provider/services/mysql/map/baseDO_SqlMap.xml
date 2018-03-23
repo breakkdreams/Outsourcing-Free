@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 自动生成（修改1：namespace；2 insertSelective 修改自增主键（删除id插入）；3修改增加select方法（表名修改） -->
+<mapper namespace="com.zd.aoding.base.DO.base.DOBase">
+	<!-- 修改命名空间 -->
+	<resultMap id="Base" type="com.zd.aoding.base.DO.base.DOBase">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="object_id" jdbcType="VARCHAR" property="objectId" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+	</resultMap>
+</mapper>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.CategoryGoodsSpecRelationDO">
+	<resultMap id="CategoryGoodsSpecRelation" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.CategoryGoodsSpecRelationDO">
+		<!-- -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="object_id" jdbcType="VARCHAR" property="objectId" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="category_id" jdbcType="INTEGER" property="categoryId" />
+		<result column="spec_name" jdbcType="VARCHAR" property="specName" />
+	</resultMap>
+
+
+
+
+	<!-- **************************** 修改增加select begin********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		category_goods_spec_relation
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="CategoryGoodsSpecRelation">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+
+			<if test="categoryId != null"> and category_id = #{categoryId}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="categoryId != null"> and category_id = #{categoryId}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+		resultMap="CategoryGoodsSpecRelation">
+		${sql}
+	</select>
+	<!-- **************************** 修改增加select end********************************* -->
+
+
+
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, deleted, object_id, create_time, update_time, category_id, spec_name
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="CategoryGoodsSpecRelation">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from
+		<include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		<!-- -->
+		delete from
+		<include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<insert id="insert" parameterType="CategoryGoodsSpecRelationDO"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into
+		<include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+			<if test="categoryId != null">
+				category_id,
+			</if>
+			<if test="specName != null">
+				spec_name,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=BIT},
+			</if>
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="categoryId != null">
+				#{categoryId,jdbcType=INTEGER},
+			</if>
+			<if test="specName != null">
+				#{specName,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="CategoryGoodsSpecRelationDO">
+		<!-- -->
+		update
+		<include refid="tableName" />
+		<set>
+			<if test="specName != null">
+				spec_name = #{specName,jdbcType=VARCHAR},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=BIT},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+</mapper>

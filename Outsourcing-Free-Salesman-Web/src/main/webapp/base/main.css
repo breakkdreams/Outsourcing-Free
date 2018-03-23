@@ -1,0 +1,176 @@
+.myFont1 {
+	color: #ffffff;
+	font-family: 微软雅黑, serif;
+	font-size: 20px;
+}
+
+.myFont2 {
+	color: green;
+	font-family: 宋体, serif;
+	font-size: 14px;
+}
+
+.myFont3 {
+	color: rgb(100, 100, 100);
+	font-family: 宋体, serif;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.myFont5 {
+	font-family: 宋体, serif;
+	font-size: 13px;
+	font-weight: 100;
+}
+
+.myFont4 {
+	color: rgb(167, 163, 158);
+	font-family: 宋体, serif;
+	font-size: 12px;
+}
+
+.color1 {
+	color: #fff;
+}
+
+.home {
+	background-color: rgb(245, 244, 243);
+	height: 1500px;
+	position: relative;
+}
+
+.home-admin {
+	position: absolute;
+	top: 10px;
+}
+
+.ico {
+	background-color: #00B92e;
+	position: absolute;
+	width: 100%;
+	top: 40px;
+}
+
+.ico-str {
+	left: 25px;
+	position: relative;
+}
+
+.row-first {
+	position: absolute;
+	top: 110px;
+}
+
+.information {
+	margin-top: 2px;
+	background-color: #ffffff;
+	position: relative;
+	height: 40px;
+	padding: 10px 0;
+}
+
+.information-icon {
+	position: relative;
+	top: 10px;
+	color: rgb(167, 163, 158);
+}
+
+.information-str {
+	position: relative;
+	top: 10px
+}
+
+.whiteModel {
+	position: absolute;
+	top: 300px;
+}
+
+.whiteModelColor {
+	position: absolute;
+	height: 60px;
+	background-color: rgb(249, 249, 248);
+}
+
+.mymenu {
+	position: absolute;
+}
+
+.mymenu-menu {
+	position: relative;
+}
+
+.mymenu-menu-list {
+	position: relative;
+	top: 20px
+}
+
+.breadcrumb {
+	padding: 8px 15px;
+	margin-bottom: 0;
+	list-style: none;
+	background-color: #ffffff;
+	border-radius: 4px;
+}
+
+.nav_m {
+	position: relative;
+}
+
+.right_nav {
+	min-width: 175px;
+}
+
+.breadcrumb {
+	text-align: left;
+	font-family: 微软雅黑, serif;
+	font-size: 16px;
+}
+
+.greyBg {
+	background-color: #C9C9C9;
+}
+
+.lightGreyBg {
+	background-color: #F1F1F1;
+}
+
+.darkGreyBg {
+	background-color: #E9E8E8;
+}
+
+.whiteBg {
+	background-color: #FFF;
+}
+
+.leftcontainer {
+	margin-right: 0;
+}
+.outer-line {
+    border: 1px solid red;
+    height: 200px;
+    line-height: 200px;
+    width: 200px;
+}  
+
+/* 最上面侧导航栏 */
+.top {
+	padding:0 5px;
+	margin-bottom: -10px;
+}
+/* 左侧导航栏 */
+.left {
+	
+}
+/* 右侧上部分导航栏条*/
+.pathInfo {
+	box-shadow: blue;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: -5px;
+}
+/* 右侧下部分主要信息*/
+.mainInfo {
+	margin-left: 5px;
+	margin-right: -5px;
+	padding: 10px;
+}

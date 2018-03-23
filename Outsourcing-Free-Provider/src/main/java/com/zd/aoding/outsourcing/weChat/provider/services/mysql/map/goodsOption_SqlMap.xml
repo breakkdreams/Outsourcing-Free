@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 自动生成（修改1：namespace；2 insertSelective 修改自增主键（删除id插入）；3修改增加select方法（表名修改） -->
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsOptionDO">
+	<!-- 修改命名空间 -->
+	<resultMap id="BaseResultMap" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsOptionDO">
+		<!-- -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="goods_id" jdbcType="INTEGER" property="goodsId" />
+		<result column="title" jdbcType="VARCHAR" property="title" />
+		<result column="market_price" jdbcType="DOUBLE" property="marketPrice" />
+		<result column="option_score_price" jdbcType="DOUBLE" property="optionScorePrice" />
+		<result column="option_bonus_price" jdbcType="DOUBLE" property="optionBonusPrice" />
+		<result column="purchase_price" jdbcType="DOUBLE" property="purchasePrice" />
+		<result column="stock" jdbcType="INTEGER" property="stock" />
+		<result column="show_stock" jdbcType="INTEGER" property="showStock" />
+		<result column="thumb" jdbcType="VARCHAR" property="thumb" />
+		<result column="spec_ids" jdbcType="VARCHAR" property="specIds" />
+		<result column="bar_code" jdbcType="VARCHAR" property="barCode" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+
+	</resultMap>
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, goods_id, title, market_price, option_score_price, option_bonus_price, stock, spec_ids, thumb, 
+		deleted, create_time,show_stock, bar_code, purchase_price,
+		update_time
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="BaseResultMap">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		<!-- -->
+		delete from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<!-- 修改自增主键id -->
+	<insert id="insert" parameterType="GoodsOptionDO"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into <include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="goodsId != null">
+				goods_id,
+			</if>
+			<if test="showStock != null">
+				show_stock,
+			</if>
+			<if test="stock != null">
+				stock,
+			</if>
+			<if test="marketPrice != null">
+				market_price,
+			</if>
+			<if test="purchasePrice != null">
+				purchase_price,
+			</if>
+			<if test="optionScorePrice != null">
+				option_score_price,
+			</if>
+			<if test="optionBonusPrice != null">
+				option_bonus_price,
+			</if>
+			<if test="title != null">
+				title,
+			</if>
+			<if test="barCode != null">
+				bar_code,
+			</if>
+			<if test="specIds != null">
+				spec_ids,
+			</if>
+			<if test="thumb != null">
+				thumb,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+
+			<if test="goodsId != null">
+				#{goodsId,jdbcType=VARCHAR},
+			</if>
+			<if test="showStock != null">
+				#{showStock,jdbcType=INTEGER},
+			</if>
+			<if test="stock != null">
+				#{stock,jdbcType=INTEGER},
+			</if>
+			<if test="marketPrice != null">
+				#{marketPrice,jdbcType=DOUBLE},
+			</if>
+			<if test="purchasePrice != null">
+				#{purchasePrice,jdbcType=DOUBLE},
+			</if>
+			<if test="optionScorePrice != null">
+				#{optionScorePrice,jdbcType=DOUBLE},
+			</if>
+			<if test="optionBonusPrice != null">
+				#{optionBonusPrice,jdbcType=DOUBLE},
+			</if>
+			<if test="title != null">
+				#{title,jdbcType=VARCHAR},
+			</if>
+			<if test="barCode != null">
+				#{barCode,jdbcType=VARCHAR},
+			</if>
+			<if test="thumb != null">
+				#{thumb,jdbcType=VARCHAR},
+			</if>
+			<if test="specIds != null">
+				#{specIds,jdbcType=VARCHAR},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=BIT},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+
+		</trim>
+	</insert>
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsOptionDO">
+		<!-- -->
+		update <include refid="tableName" />
+		<set>
+			<if test="goodsId != null">
+				goods_id = #{goodsId,jdbcType=INTEGER},
+			</if>
+			<if test="showStock != null">
+				show_stock = #{showStock,jdbcType=INTEGER},
+			</if>
+			<if test="stock != null">
+				stock = #{stock,jdbcType=INTEGER},
+			</if>
+			<if test="marketPrice != null">
+				market_price = #{marketPrice,jdbcType=DOUBLE},
+			</if>
+			<if test="purchasePrice != null">
+				purchase_price = #{purchasePrice,jdbcType=DOUBLE},
+			</if>
+			<if test="optionScorePrice != null">
+				option_score_price = #{optionScorePrice,jdbcType=DOUBLE},
+			</if>
+			<if test="optionBonusPrice != null">
+				option_bonus_price = #{optionBonusPrice,jdbcType=DOUBLE},
+			</if>
+			<if test="title != null">
+				title = #{title,jdbcType=VARCHAR},
+			</if>
+			<if test="barCode != null">
+				bar_code = #{barCode,jdbcType=VARCHAR},
+			</if>
+			<if test="thumb != null">
+				thumb = #{thumb,jdbcType=VARCHAR},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=BIT},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+
+
+	<!-- **************************** 修改增加select begin********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		goods_option
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+
+			<if test="title != null"> and title = #{title}</if>
+			<if test="goodsId != null"> and goods_id = #{goodsId}</if>
+			<if test="specIds != null"> and spec_ids = #{specIds}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="barCode != null"> and bar_code = #{barCode}</if>
+            <if test="optionIds"> and id in 
+                <foreach collection="optionIds" open="(" close=")" separator="," item="id">
+                    #{id}
+                </foreach>
+            </if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="title != null"> and title = #{title}</if>
+			<if test="goodsId != null"> and goods_id = #{goodsId}</if>
+			<if test="specIds != null"> and spec_ids = #{specIds}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="barCode != null"> and bar_code = #{barCode}</if>
+			<if test="optionIds"> and id in 
+                <foreach collection="optionIds" open="(" close=")" separator="," item="id">
+                    #{id}
+                </foreach>
+            </if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+	resultMap="BaseResultMap">
+	${sql}
+	</select>
+<!-- **************************** 修改增加select end********************************* -->
+
+
+</mapper>

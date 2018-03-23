@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace用于java代码调用时识别指定xml的mapper文件 -->
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ImageFileDO">
+	<!-- 配置ORM映射 -->
+	<resultMap id="imageFileM" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ImageFileDO">
+		<id property="imgId" column="imgid" javaType="int" jdbcType="INTEGER"></id>
+		<result property="imgUrl" column="img_url" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="md5" column="md5" javaType="String" jdbcType="VARCHAR" />
+		<result property="accountId" column="accountid" javaType="int"
+			jdbcType="INTEGER" />
+		<result property="size" column="size" javaType="int" jdbcType="INTEGER" />
+		<result property="fileContentType" column="file_content_type" javaType="String" jdbcType="VARCHAR" />
+		<result property="fileName" column="file_name" javaType="String" jdbcType="VARCHAR" />
+		<result property="createStr" column="create_str" javaType="String" jdbcType="VARCHAR" />
+		<result property="width" column="width" javaType="int" jdbcType="INTEGER" />
+		<result property="height" column="height" javaType="int" jdbcType="INTEGER" />
+		<result property="convertIp" column="convert_ip" javaType="String" jdbcType="VARCHAR" />
+		<result property="desc" column="desc" javaType="String" jdbcType="VARCHAR" />
+		
+		<result column="create_time" property="create_time" javaType="java.sql.Date" jdbcType="TIMESTAMP" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		
+	</resultMap>
+	
+
+	<!-- ***表格名*** <include refid="tableName" /> -->
+	<sql id="tableName">
+		file_image
+	</sql>
+
+	<!-- 删除 -->
+	<update id="dropTable">
+		drop table ${tableName}
+	</update>
+	<!-- 创建表格 -->
+	<insert id="createimageFileGG" parameterType="String">
+		create table if not
+		exists
+		${tableName} (
+		imgId int not null AUTO_INCREMENT
+		COMMENT '图片表',
+		accountId int not null COMMENT '上传帐号',
+		imgUrl varchar(150) not null
+		COMMENT '图片路径',
+		createDate TIMESTAMP not null COMMENT '创建时间',
+		deleted
+		int(2) DEFAULT '0',
+		size int(11) DEFAULT '0'
+		COMMENT '大小',
+		updateTs
+		BIGINT(15) DEFAULT '0',
+		MD5 varchar(255)
+		COMMENT
+		'md5加密Stram', primary
+		key (imgId))
+	</insert>
+
+	<!-- **************************** insert ********************************* -->
+	<insert id="insert" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ImageFileDO" useGeneratedKeys="true"
+		keyProperty="imgId">
+		insert into
+		<include refid="tableName" />
+		(img_url,file_content_type,file_name,deleted,width,height,convert_ip,create_time,md5,size,accountid)
+		VALUES
+		(#{imgUrl,jdbcType=VARCHAR},#{fileContentType,jdbcType=VARCHAR},#{fileName,jdbcType=VARCHAR},
+		#{deleted,jdbcType=BIT},#{width,jdbcType=INTEGER},#{height,jdbcType=INTEGER},#{convertIp,jdbcType=VARCHAR},
+		#{createTime,jdbcType=TIMESTAMP},#{md5,jdbcType=VARCHAR},#{size,jdbcType=INTEGER},#{accountId,jdbcType=INTEGER})
+	</insert>
+	<!-- **************************** select ********************************* -->
+	<select id="selectPk" parameterType="int" resultMap="imageFileM">
+		SELECT
+		*
+		FROM
+		<include refid="tableName" />
+		WHERE imgId = #{imgId}
+	</select>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="imageFileM">
+		SELECT
+		*
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null">and deleted = #{deleted}</if>
+			<if test="md5 != null">and md5 = #{md5}</if>
+		</where>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null">and deleted = #{deleted}</if>
+			<if test="MD5 != null">and md5 = #{MD5}</if>
+			<if test="imgUrl != null">and img_url = #{imgUrl}</if>
+		</where>
+	</select>
+
+
+
+
+	<!-- **************************** update ********************************* -->
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ImageFileDO">
+		UPDATE
+		<include refid="tableName" />
+		<set>
+			<if test="imgUrl != null">
+				img_url = #{imgUrl,jdbcType=VARCHAR},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted},
+			</if>
+			<if test="createDate != null">
+				createDate = #{createDate},
+			</if>
+			<if test="updateTs != null">
+				updateTs = #{updateTs}
+			</if>
+		</set>
+		<where>
+			<if test="imgId != null">
+				imgid = #{imgId}
+			</if>
+		</where>
+	</update>
+</mapper>

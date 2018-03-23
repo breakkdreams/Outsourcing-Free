@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Auto Height Examples</title>
+		<style>
+			form {
+				margin: 0;
+			}
+			textarea {
+				display: block;
+			}
+		</style>
+		<link rel="stylesheet" href="jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.css" />
+		<link rel="stylesheet" href="../themes/default/default.css" />
+		<script charset="utf-8" src="jquery.js"></script>
+		<script charset="utf-8" src="jquery-ui/js/jquery-ui-1.9.2.custom.js"></script>
+		<script charset="utf-8" src="../kindeditor-min.js"></script>
+		<script charset="utf-8" src="../lang/zh_CN.js"></script>
+		<script>
+			KindEditor.ready(function(K) {
+				K.create('textarea[name="content"]', {
+					autoHeightMode : true,
+					minWidth:'0px',
+					afterCreate : function() {
+						this.loadPlugin('autoheight');
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h3>自动调整高度 &nbsp;&nbsp; <a onclick="toolbar()">工具栏</a></h3>
+		<textarea name="content" style="width:800px;height:200px;"></textarea>
+		
+	</body>
+	<script type="text/javascript">
+		function toolbar(){
+			$(".ke-toolbar").toggle('fast');
+		}
+	</script>
+</html>

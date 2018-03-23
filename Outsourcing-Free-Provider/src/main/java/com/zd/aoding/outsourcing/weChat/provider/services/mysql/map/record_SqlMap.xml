@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordsDO">
+	<resultMap id="Record" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordsDO"
+		extends="com.zd.aoding.base.DO.base.DOBase.Base">
+		<result column="record_type" property="recordType" jdbcType="INTEGER" />
+		<result column="description" property="description" jdbcType="VARCHAR" />
+		<result column="description_stand" property="descriptionStand" jdbcType="VARCHAR" />
+		
+		<result column="cause" property="cause" jdbcType="VARCHAR" />
+		<result column="result" property="result" jdbcType="VARCHAR" />
+		<result column="lever" property="lever" jdbcType="INTEGER" />
+		<result column="deal_type" property="dealType" jdbcType="INTEGER" />
+		<result column="deal_id" property="dealId" jdbcType="INTEGER" />
+		<result column="be_dealed_id" property="beDealedId" jdbcType="INTEGER" />
+
+	</resultMap>
+	<!-- ***表格名BaseRecordServiceImpl中写死的表明*** -->
+	<sql id="recordNormal">
+		record_normal
+	</sql>
+	<sql id="recordImportant">
+		record_important
+	</sql>
+
+
+	<sql id="chooseTable">
+		<if test="lever!=null">
+			<if test="lever==2">
+				<include refid="recordImportant"></include>
+			</if>
+			<if test="lever==3">
+				<include refid="recordNormal"></include>
+			</if>
+		</if>
+		<if test="lever==null">
+			<include refid="recordNormal"></include>
+		</if>
+	</sql>
+
+
+
+
+
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, deleted, create_time, update_time, object_id, deal_type, deal_id,
+		be_dealed_id,
+		result, cause, lever, record_type, description,
+		description_stand
+	</sql>
+
+
+
+	<insert id="insert" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordsDO" 
+	useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into
+		<include refid="chooseTable"></include>
+
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="dealType != null">
+				deal_Type,
+			</if>
+			<if test="dealId != null">
+				deal_id,
+			</if>
+			<if test="beDealedId != null">
+				be_dealed_id,
+			</if>
+			<if test="result != null">
+				result,
+			</if>
+			<if test="cause != null">
+				cause,
+			</if>
+			<if test="lever != null">
+				lever,
+			</if>
+			<if test="recordType != null">
+				record_type,
+			</if>
+			<if test="description != null">
+				description,
+			</if>
+			<if test="descriptionStand != null">
+				description_stand,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=INTEGER},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="dealType != null">
+				#{dealType,jdbcType=INTEGER},
+			</if>
+			<if test="dealId != null">
+				#{dealId,jdbcType=INTEGER},
+			</if>
+			<if test="beDealedId != null">
+				#{beDealedId,jdbcType=INTEGER},
+			</if>
+			<if test="result != null">
+				#{result,jdbcType=VARCHAR},
+			</if>
+			<if test="cause != null">
+				#{cause,jdbcType=VARCHAR},
+			</if>
+			<if test="lever != null">
+				#{lever,jdbcType=INTEGER},
+			</if>
+			<if test="recordType != null">
+				#{recordType,jdbcType=INTEGER},
+			</if>
+			<if test="description != null">
+				#{description,jdbcType=VARCHAR},
+			</if>
+			<if test="descriptionStand != null">
+				#{descriptionStand,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordsDO">
+		<!-- -->
+		update
+		<include refid="chooseTable"></include>
+		<set>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=INTEGER},
+			</if>
+			<if test="createTime != null">
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="objectId != null">
+				object_id = #{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="dealType != null">
+				deal_type = #{dealType,jdbcType=INTEGER},
+			</if>
+			<if test="dealId != null">
+				deal_id = #{dealId,jdbcType=INTEGER},
+			</if>
+			<if test="beDealedId != null">
+				be_dealed_id = #{beDealedId,jdbcType=INTEGER},
+			</if>
+			<if test="result != null">
+				result = #{result,jdbcType=VARCHAR},
+			</if>
+			<if test="cause != null">
+				cause = #{cause,jdbcType=VARCHAR},
+			</if>
+			<if test="lever != null">
+				lever = #{lever,jdbcType=INTEGER},
+			</if>
+			<if test="recordType != null">
+				record_type = #{recordType,jdbcType=INTEGER},
+			</if>
+			<if test="description != null">
+				description = #{description,jdbcType=VARCHAR},
+			</if>
+			<if test="descriptionStand != null">
+				description_stand = #{descriptionStand,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+	<!-- **************************** select ********************************* -->
+
+
+
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="Record">
+		SELECT
+		*
+		FROM
+		<include refid="chooseTable"></include>
+		<where>
+
+			<if test="recordType != null"> and record_type = #{recordType}</if>
+
+		</where>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="chooseTable"></include>
+	</select>
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="chooseTable"></include>
+		<where>
+			<if test="recordType != null"> and record_type = #{recordType}</if>
+		</where>
+	</select>
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+		resultMap="Record">
+		${sql}
+	</select>
+
+</mapper>

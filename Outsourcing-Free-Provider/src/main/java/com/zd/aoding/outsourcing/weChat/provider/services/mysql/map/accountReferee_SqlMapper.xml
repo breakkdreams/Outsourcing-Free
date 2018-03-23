@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.AccountRefereeDO">
+	<resultMap id="AccountReferee" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.AccountRefereeDO">
+		<!-- -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="object_id" jdbcType="VARCHAR" property="objectId" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="bereferee_account_id" jdbcType="INTEGER" property="beRefereeAccountId" />
+		<result column="referee_account_id" jdbcType="INTEGER" property="refereeAccountId" />
+		<result column="fanli_total" jdbcType="DOUBLE" property="fanliTotal" />
+		<result column="fanli_total_two" jdbcType="DOUBLE" property="fanliTotalTwo" />
+	</resultMap>
+
+
+
+
+	<!-- **************************** 修改增加select begin********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		account_referee
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="AccountReferee">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+
+			<if test="beRefereeAccountId != null"> and bereferee_account_id = #{beRefereeAccountId}</if>
+			<if test="refereeAccountId != null"> and referee_account_id = #{refereeAccountId}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="beRefereeAccountId != null"> and bereferee_account_id = #{beRefereeAccountId}</if>
+			<if test="refereeAccountId != null"> and referee_account_id = #{refereeAccountId}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+		resultMap="AccountReferee">
+		${sql}
+	</select>
+	<!-- **************************** 修改增加select end********************************* -->
+
+
+
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, deleted, object_id, create_time, update_time, bereferee_account_id, referee_account_id, fanli_total, fanli_total_two
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="AccountReferee">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from
+		<include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		<!-- -->
+		delete from
+		<include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<insert id="insert" parameterType="AccountRefereeDO"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into
+		<include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+			<if test="beRefereeAccountId != null">
+				bereferee_account_id,
+			</if>
+			<if test="refereeAccountId != null">
+				referee_account_id,
+			</if>
+			<if test="fanliTotal != null">
+				fanli_total,
+			</if>
+			<if test="fanliTotalTwo != null">
+				fanli_total_two,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=BIT},
+			</if>
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="beRefereeAccountId != null">
+				#{beRefereeAccountId,jdbcType=INTEGER},
+			</if>
+			<if test="refereeAccountId != null">
+				#{refereeAccountId,jdbcType=INTEGER},
+			</if>
+			<if test="fanliTotal != null">
+				#{fanliTotal,jdbcType=DOUBLE},
+			</if>
+			<if test="fanliTotalTwo != null">
+				#{fanliTotalTwo,jdbcType=DOUBLE},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="AccountRefereeDO">
+		<!-- -->
+		update
+		<include refid="tableName" />
+		<set>
+			<if test="fanliTotal != null">
+				fanli_total = #{fanliTotal,jdbcType=DOUBLE},
+			</if>
+			<if test="fanliTotalTwo != null">
+				fanli_total_two = #{fanliTotalTwo,jdbcType=DOUBLE},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+</mapper>

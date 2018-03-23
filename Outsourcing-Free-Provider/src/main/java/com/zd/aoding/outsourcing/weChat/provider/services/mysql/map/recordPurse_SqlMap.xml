@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordPursesDO">
+	<resultMap id="RecordPurse"
+		type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordPursesDO" 
+		extends="com.zd.aoding.base.DO.base.DOBase.Base">
+		<result column="purse_type" property="purseType" jdbcType="INTEGER" />
+		<result column="add_or_cut" property="addOrCut" jdbcType="INTEGER" />
+		<result column="change_num" property="changeNum" jdbcType="INTEGER" />
+		<result column="filed_name" property="filedName" jdbcType="VARCHAR" />
+		<result column="description" property="description" jdbcType="VARCHAR" />
+		
+		<result column="cause" property="cause" jdbcType="VARCHAR" />
+		<result column="result" property="result" jdbcType="VARCHAR" />
+		<result column="lever" property="lever" jdbcType="INTEGER" />
+		<result column="deal_type" property="dealType" jdbcType="INTEGER" />
+		<result column="deal_id" property="dealId" jdbcType="INTEGER" />
+		<result column="be_dealed_id" property="beDealedId" jdbcType="INTEGER" />
+	</resultMap>
+
+
+	<!-- ***表格名BaseRecordServiceImpl中写死的表明*** -->
+	<sql id="tableName">
+		record_purse
+	</sql>
+
+
+
+
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, create_time, deleted, object_id, update_time, result, cause,
+		lever, deal_type,
+		deal_id, be_dealed_id, purse_type, change_num,
+		add_or_cut, filed_name,
+		description
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="RecordPurse">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from record_purse
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+
+	<insert id="insert" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordPursesDO"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into record_purse
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+			<if test="result != null">
+				result,
+			</if>
+			<if test="cause != null">
+				cause,
+			</if>
+			<if test="lever != null">
+				lever,
+			</if>
+			<if test="dealType != null">
+				deal_type,
+			</if>
+			<if test="dealId != null">
+				deal_id,
+			</if>
+			<if test="beDealedId != null">
+				be_dealed_id,
+			</if>
+			<if test="purseType != null">
+				purse_type,
+			</if>
+			<if test="changeNum != null">
+				change_num,
+			</if>
+			<if test="addOrCut != null">
+				add_or_cut,
+			</if>
+			<if test="filedName != null">
+				filed_name,
+			</if>
+			<if test="description != null">
+				description,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=INTEGER},
+			</if>
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="result != null">
+				#{result,jdbcType=VARCHAR},
+			</if>
+			<if test="cause != null">
+				#{cause,jdbcType=VARCHAR},
+			</if>
+			<if test="lever != null">
+				#{lever,jdbcType=INTEGER},
+			</if>
+			<if test="dealType != null">
+				#{dealType,jdbcType=INTEGER},
+			</if>
+			<if test="dealId != null">
+				#{dealId,jdbcType=INTEGER},
+			</if>
+			<if test="beDealedId != null">
+				#{beDealedId,jdbcType=INTEGER},
+			</if>
+			<if test="purseType != null">
+				#{purseType,jdbcType=INTEGER},
+			</if>
+			<if test="changeNum != null">
+				#{changeNum,jdbcType=INTEGER},
+			</if>
+			<if test="addOrCut != null">
+				#{addOrCut,jdbcType=INTEGER},
+			</if>
+			<if test="filedName != null">
+				#{filedName,jdbcType=VARCHAR},
+			</if>
+			<if test="description != null">
+				#{description,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordPursesDO">
+		<!-- -->
+		update record_purse
+		<set>
+			<if test="createTime != null">
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=INTEGER},
+			</if>
+			<if test="objectId != null">
+				object_id = #{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="result != null">
+				result = #{result,jdbcType=VARCHAR},
+			</if>
+			<if test="cause != null">
+				cause = #{cause,jdbcType=VARCHAR},
+			</if>
+			<if test="lever != null">
+				lever = #{lever,jdbcType=INTEGER},
+			</if>
+			<if test="dealType != null">
+				deal_type = #{dealType,jdbcType=INTEGER},
+			</if>
+			<if test="dealId != null">
+				deal_id = #{dealId,jdbcType=INTEGER},
+			</if>
+			<if test="beDealedId != null">
+				be_dealed_id = #{beDealedId,jdbcType=INTEGER},
+			</if>
+			<if test="purseType != null">
+				purse_type = #{purseType,jdbcType=INTEGER},
+			</if>
+			<if test="changeNum != null">
+				change_num = #{changeNum,jdbcType=INTEGER},
+			</if>
+			<if test="addOrCut != null">
+				add_or_cut = #{addOrCut,jdbcType=INTEGER},
+			</if>
+			<if test="filedName != null">
+				filed_name = #{filedName,jdbcType=VARCHAR},
+			</if>
+			<if test="description != null">
+				description = #{description,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+
+
+	<!-- **************************** select ********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="RecordPurse">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+
+			<if test="beDealedId != null"> and be_dealed_id = #{beDealedId}</if>
+			<if test="username != null"> and username = #{username}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="type != null"> and type = #{type}</if>
+			<if test="purseType != null"> and purse_type = #{purseType}</if>
+			<if test="purseTypeAll != null"> and (purse_type = 5 or purse_type = 7)</if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+	<!-- 数据量比较大的时候的分页 -->
+	<select id="selectParamOP" parameterType="java.util.Map"
+		resultMap="RecordPurse">
+
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="screen == null">
+				id>= ${rowBegin}
+				<if test="orderColumn != null">
+					ORDER BY ${orderColumn}
+					<if test="orderTurn != null">
+						${orderTurn}
+					</if>
+				</if>
+				limit ${rowSize}
+			</if>
+			<if test="screen != null">
+				<if test="beDealedId != null"> and be_dealed_id = #{beDealedId}</if>
+				<if test="username != null"> and username = #{username}</if>
+				<if test="deleted != null"> and deleted = #{deleted}</if>
+				<if test="type != null"> and type = #{type}</if>
+				<if test="purseType != null"> and purse_type = #{purseType}</if>
+				<if test="purseTypeAll != null"> and (purse_type = 5 or purse_type = 7)</if>
+				<if test="orderColumn != null">
+					ORDER BY ${orderColumn}
+					<if test="orderTurn != null">
+						${orderTurn}
+					</if>
+				</if>
+				limit ${rowBegin},${rowSize}
+			</if>
+		</where>
+
+
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="beDealedId != null"> and be_dealed_id = #{beDealedId}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="purseType != null"> and purse_type = #{purseType}</if>
+			<if test="purseTypeAll != null"> and (purse_type = 5 or purse_type = 7)</if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+		resultMap="RecordPurse">
+		${sql}
+	</select>
+	<!-- **************************** 修改增加select end********************************* -->
+
+</mapper>

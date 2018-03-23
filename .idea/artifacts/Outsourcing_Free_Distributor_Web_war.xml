@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Outsourcing-Free-Distributor-Web:war">
+    <output-path>$PROJECT_DIR$/Outsourcing-Free-Distributor-Web/target</output-path>
+    <root id="archive" name="Outsourcing-Free-Distributor-Web.war">
+      <element id="artifact" artifact-name="Outsourcing-Free-Distributor-Web:war exploded" />
+    </root>
+  </artifact>
+</component>

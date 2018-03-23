@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.WXOrderDO">
+	<resultMap id="BaseResultMap" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.WXOrderDO">
+		<!-- extends="base.BaseBean"> -->
+		<id column="wxorderid" jdbcType="INTEGER" property="wxorderId" />
+		<result column="userid" jdbcType="INTEGER" property="userId" />
+		<result column="ordertype" jdbcType="VARCHAR" property="orderType" />
+		<result column="orderid" jdbcType="INTEGER" property="orderId" />
+		<result column="paramsjson" jdbcType="VARCHAR" property="paramsJson" />
+	</resultMap>
+
+	<sql id="tableName">
+		wxorder
+	</sql>
+
+	<sql id="Base_Column_List">
+		wxorderid, userid, ordertype, orderid, paramsjson
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from
+		<include refid="tableName" />
+		where wxorderid = #{wxorderId,jdbcType=INTEGER}
+	</select>
+
+
+	<insert id="insert" parameterType="WXOrderDO" useGeneratedKeys="true"
+		keyProperty="wxorderId">
+		insert into
+		<include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="userId != null">
+				userid
+			</if>
+			<if test="orderType != null">
+				,ordertype
+			</if>
+			<if test="orderId != null">
+				,orderid
+			</if>
+			<if test="paramsJson != null">
+				,paramsjson
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+
+			<if test="userId != null">
+				#{userId,jdbcType=INTEGER}
+			</if>
+			<if test="orderType != null">
+				,#{orderType,jdbcType=VARCHAR}
+			</if>
+			<if test="orderId != null">
+				,#{orderId,jdbcType=INTEGER}
+			</if>
+			<if test="paramsJson != null">
+				,#{paramsJson,jdbcType=VARCHAR}
+			</if>
+		</trim>
+	</insert>
+
+
+
+	<update id="update" parameterType="WXOrderDO">
+		update wxorder
+		<set>
+			<if test="userId != null">
+				userid = #{userId,jdbcType=INTEGER},
+			</if>
+			<if test="orderType != null">
+				ordertype = #{orderType,jdbcType=VARCHAR},
+			</if>
+			<if test="orderId != null">
+				orderid = #{orderId,jdbcType=INTEGER},
+			</if>
+			<if test="paramsJson != null">
+				paramsjson = #{paramsJson,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where wxorderid = #{wxorderId,jdbcType=INTEGER}
+	</update>
+
+
+
+
+
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT
+		*
+
+		FROM
+		<include refid="tableName" />
+		<where>
+<!-- 			<if test="isDeleted != null">and deleted = #{isDeleted}</if> -->
+
+		</where>
+
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			
+
+		</where>
+
+	</select>
+
+	<cache />
+</mapper>

@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.zd</groupId>
+		<artifactId>Outsourcing-Free</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>Outsourcing-Free-Web</artifactId>
+
+	<packaging>war</packaging>
+	<name>Outsourcing-Free-Web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+
+
+	<properties>
+		<!-- 普通引入jar包 -->
+		<junit.version>4.12</junit.version>
+		<servlet-api.version>3.0.1</servlet-api.version>
+		<!-- 编译运行配置 -->
+		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+		<source.version>1.7</source.version>
+		<tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
+		<maven-war-plugin.version>2.1.1</maven-war-plugin.version>
+		<maven-jetty-plugin.version>6.1.5</maven-jetty-plugin.version>
+		<sourceEncoding>UTF-8</sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- 运行访问配置 -->
+		<run.port>8088</run.port>
+		<run.contextPath>/</run.contextPath>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.zd</groupId>
+			<artifactId>Outsourcing-Free-Provider</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+
+
+	<!-- 选着环境变量 redis和mysql配置文件 -->
+	<profiles>
+		<profile>
+			<id>local</id>
+			<properties>
+				<profiles.active>local</profiles.active>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+
+		</profile>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<profiles.active>dev</profiles.active>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<profiles.active>prod</profiles.active>
+			</properties>
+		</profile>
+	</profiles>
+
+
+	<build>
+		<finalName>Outsourcing-Free-Web</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<!--打包包含xml文件 -->
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+				<!--默认打包排除env文件夹 -->
+				<excludes>
+					<exclude>env/**/*</exclude>
+				</excludes>
+			</resource>
+			<!--根据参数打包配置文件 -->
+			<resource>
+				<directory>src/main/resources/env/${profiles.active}</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+
+			<!-- JDK配置 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${source.version}</source>
+					<target>${source.version}</target>
+					<encoding>${sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<!-- JDK配置 end -->
+			<!-- tomcat7配置 -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>${tomcat7-maven-plugin.version}</version>
+				<configuration>
+					<!-- 注意此处的url -->
+					<!-- <url>http://115.29.207.3/manager/text</url> -->
+					<url>http://localhost:${run.port}/manager/text</url>
+					<username>admin</username>
+					<password>password</password>
+					<server>tomcat7</server><!-- 此处的名字必须和setting.xml中配置的ID一致 -->
+					<path>${run.contextPath}</path> <!-- 此处的名字是项目发布的工程名 -->
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>${maven-war-plugin.version}</version>
+				<configuration>
+					<encoding>${sourceEncoding}</encoding>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			<!-- tomcat7配置 end -->
+			<!-- Jeyyt配置 -->
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<version>${maven-jetty-plugin.version}</version>
+				<configuration>
+					<webDefaultXml>src/main/resources/jetty/webdefault.xml</webDefaultXml>
+					<webAppSourceDirectory>src/main/webapp</webAppSourceDirectory>
+					<scanIntervalSeconds>3</scanIntervalSeconds>
+					<!-- <webApp> -->
+					<!-- <contextPath>/</contextPath> -->
+					<!-- </webApp> -->
+
+					<!-- jetty插件启动后的访问路径: http://localhost:8080/testdemo -->
+					<contextPath>${run.contextPath}</contextPath>
+					<sessionHandler implementation="org.eclipse.jetty.server.session.SessionHandler">
+						<sessionManager
+							implementation="org.eclipse.jetty.server.session.HashSessionManager">
+							<!-- 用于存放持久化的session路径 -->
+							<storeDirectory>doc/jetty-sessions</storeDirectory>
+							<idleSavePeriod>1</idleSavePeriod>
+						</sessionManager>
+					</sessionHandler>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>${run.port}</port>
+						</connector>
+					</connectors>
+				</configuration>
+			</plugin>
+			<!-- Jeyyt配置end -->
+		</plugins>
+
+	</build>
+</project>
+

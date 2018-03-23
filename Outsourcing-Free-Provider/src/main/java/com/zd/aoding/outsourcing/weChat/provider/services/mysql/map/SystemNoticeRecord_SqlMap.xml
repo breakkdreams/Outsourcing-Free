@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 自动生成（修改1：namespace；2 insertSelective 修改自增主键（删除id插入）；3修改增加select方法（表名修改） -->
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.SystemNoticeRecordDO">
+	<!-- 修改命名空间 -->
+	<resultMap id="BonusRecord" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.SystemNoticeRecordDO" extends="base.BaseBean">
+		<!-- -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="user_id" jdbcType="INTEGER" property="userId" />
+		<result column="app_code" jdbcType="VARCHAR" property="appCode" />
+		<result column="notice_id" jdbcType="INTEGER" property="noticeId" />
+
+	</resultMap>
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, object_id, user_id, app_code, notice_id, deleted, create_time,
+		update_time
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="BonusRecord">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		<!-- -->
+		delete from <include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<!-- 修改自增主键id -->
+	<insert id="insert" parameterType="SystemNoticeRecordDO"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into <include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="userId != null">
+				user_id,
+			</if>
+			<if test="appCode != null">
+				app_code,
+			</if>
+			<if test="noticeId != null">
+				notice_id,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="userId != null">
+				#{userId,jdbcType=INTEGER},
+			</if>
+			<if test="appCode != null">
+				#{appCode,jdbcType=VARCHAR},
+			</if>
+			<if test="noticeId != null">
+				#{noticeId,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=BIT},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+
+		</trim>
+	</insert>
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.SystemNoticeRecordDO">
+		<!-- -->
+		update <include refid="tableName" />
+		<set>
+			<if test="objectId != null">
+				object_id = #{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="userId != null">
+				user_id = #{userId,jdbcType=INTEGER},
+			</if>
+			<if test="appCode != null">
+				app_code = #{appCode,jdbcType=VARCHAR},
+			</if>
+			<if test="noticeId != null">
+				notice_id = #{noticeId,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=BIT},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+
+
+	<!-- **************************** 修改增加select begin********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		system_notice_record
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BonusRecord">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="appCode != null"> and app_code = #{appCode}</if>
+			<if test="userId != null"> and user_id = #{userId}</if>
+			<if test="noticeId != null"> and notice_id = #{noticeId}</if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="appCode != null"> and app_code = #{appCode}</if>
+			<if test="userId != null"> and user_id = #{userId}</if>
+			<if test="noticeId != null"> and notice_id = #{noticeId}</if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+	resultMap="BonusRecord">
+	${sql}
+	</select>
+<!-- **************************** 修改增加select end********************************* -->
+
+
+</mapper>

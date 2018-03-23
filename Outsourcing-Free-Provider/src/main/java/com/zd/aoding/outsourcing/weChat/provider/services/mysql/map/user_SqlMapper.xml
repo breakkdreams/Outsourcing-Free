@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.UserDO">
+	<resultMap id="BaseResultMap" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.UserDO">
+		<!-- -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<id column="app_code" jdbcType="VARCHAR" property="appCode" />
+		<result column="account_id" jdbcType="INTEGER" property="accountId" />
+		<result column="refree_code" jdbcType="VARCHAR" property="refreeCode" />
+		<result column="portrait" jdbcType="VARCHAR" property="portrait" />
+		<result column="yjq_portrait" jdbcType="VARCHAR" property="yjqPortrait" />
+		<result column="sex" jdbcType="INTEGER" property="sex" />
+		<result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+
+		<result column="birthday" jdbcType="DATE" property="birthday" />
+		<result column="grade_sort" jdbcType="INTEGER" property="gradeSort" />
+		<result column="vip_score" jdbcType="INTEGER" property="vipScore" />
+		<result column="phone" jdbcType="VARCHAR" property="phone" />
+		<result column="email" jdbcType="VARCHAR" property="email" />
+		<result column="province_id" jdbcType="INTEGER" property="provinceId" />
+		<result column="city_id" jdbcType="INTEGER" property="cityId" />
+		<result column="district_id" jdbcType="INTEGER" property="districtId" />
+		<result column="address" jdbcType="VARCHAR" property="address" />
+		<result column="deleted" jdbcType="TINYINT" property="deleted" />
+		<result column="object_id" jdbcType="VARCHAR" property="objectId" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+	</resultMap>
+
+
+
+
+	<!-- **************************** 修改增加select begin********************************* -->
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		user
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+
+			<if test="refreeCode != null"> and refree_code = #{refreeCode}</if>
+			<if test="appCode != null"> and app_code = #{appCode}</if>
+			<if test="accountId != null"> and account_id = #{accountId}</if>
+			<if test="phone != null"> and phone = #{phone}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="nickName != null"> and nick_name = #{nickName}</if>
+            <if test="phoneLike != null"> and phone like CONCAT('%',#{phoneLike},'%')</if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="refreeCode != null"> and refree_code = #{refreeCode}</if>
+			<if test="appCode != null"> and app_code = #{appCode}</if>
+			<if test="accountId != null"> and account_id = #{accountId}</if>
+			<if test="phone != null"> and phone = #{phone}</if>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="nickName != null"> and nick_name = #{nickName}</if>
+			<if test="phoneLike != null"> and phone like CONCAT('%',#{phoneLike},'%')</if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+		resultMap="BaseResultMap">
+		${sql}
+	</select>
+	<!-- **************************** 修改增加select end********************************* -->
+
+
+
+	<sql id="Base_Column_List">
+		<!-- -->
+		id, app_code,account_id, refree_code, portrait, yjq_portrait, sex, nick_name, birthday,
+		grade_sort, vip_score, phone, email, province_id, city_id, district_id,
+		address,
+		deleted, object_id, create_time, update_time
+	</sql>
+	<select id="selectPk" parameterType="java.lang.Integer"
+		resultMap="BaseResultMap">
+		<!-- -->
+		select
+		<include refid="Base_Column_List" />
+		from
+		<include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		<!-- -->
+		delete from
+		<include refid="tableName" />
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<insert id="insert" parameterType="UserDO" useGeneratedKeys="true"
+		keyProperty="id">
+		<!-- -->
+		insert into
+		<include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="appCode != null">
+				app_code,
+			</if>
+			<if test="accountId != null">
+				account_id,
+			</if>
+			<if test="refreeCode != null">
+				refree_code,
+			</if>
+			<if test="portrait != null">
+				portrait,
+			</if>
+			<if test="yjqPortrait != null">
+				yjq_portrait,
+			</if>
+			<if test="sex != null">
+				sex,
+			</if>
+			<if test="nickName != null">
+				nick_name,
+			</if>
+
+			<if test="birthday != null">
+				birthday,
+			</if>
+			<if test="gradeSort != null">
+				grade_sort,
+			</if>
+			<if test="vipScore != null">
+				vip_score,
+			</if>
+			<if test="phone != null">
+				phone,
+			</if>
+			<if test="email != null">
+				email,
+			</if>
+			<if test="provinceId != null">
+				province_id,
+			</if>
+			<if test="cityId != null">
+				city_id,
+			</if>
+			<if test="districtId != null">
+				district_id,
+			</if>
+			<if test="address != null">
+				address,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="appCode != null">
+				#{appCode,jdbcType=VARCHAR},
+			</if>
+			<if test="accountId != null">
+				#{accountId,jdbcType=INTEGER},
+			</if>
+			<if test="refreeCode != null">
+				#{refreeCode,jdbcType=VARCHAR},
+			</if>
+			<if test="portrait != null">
+				#{portrait,jdbcType=VARCHAR},
+			</if>
+			<if test="yjqPortrait != null">
+				#{yjqPortrait,jdbcType=VARCHAR},
+			</if>
+			<if test="sex != null">
+				#{sex,jdbcType=INTEGER},
+			</if>
+			<if test="nickName != null">
+				#{nickName,jdbcType=VARCHAR},
+			</if>
+
+			<if test="birthday != null">
+				#{birthday,jdbcType=DATE},
+			</if>
+			<if test="gradeSort != null">
+				#{gradeSort,jdbcType=INTEGER},
+			</if>
+			<if test="vipScore != null">
+				#{vipScore,jdbcType=INTEGER},
+			</if>
+			<if test="phone != null">
+				#{phone,jdbcType=VARCHAR},
+			</if>
+			<if test="email != null">
+				#{email,jdbcType=VARCHAR},
+			</if>
+			<if test="provinceId != null">
+				#{provinceId,jdbcType=INTEGER},
+			</if>
+			<if test="cityId != null">
+				#{cityId,jdbcType=INTEGER},
+			</if>
+			<if test="districtId != null">
+				#{districtId,jdbcType=INTEGER},
+			</if>
+			<if test="address != null">
+				#{address,jdbcType=VARCHAR},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=TINYINT},
+			</if>
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="UserDO">
+		<!-- -->
+		update
+		<include refid="tableName" />
+		<set>
+			<if test="accountId != null">
+				account_id = #{accountId,jdbcType=INTEGER},
+			</if>
+			<if test="refreeCode != null">
+				refree_code = #{refreeCode,jdbcType=VARCHAR},
+			</if>
+			<if test="portrait != null">
+				portrait = #{portrait,jdbcType=VARCHAR},
+			</if>
+			<if test="yjqPortrait != null">
+				yjq_portrait = #{yjqPortrait,jdbcType=VARCHAR},
+			</if>
+			<if test="sex != null">
+				sex = #{sex,jdbcType=INTEGER},
+			</if>
+			<if test="nickName != null">
+				nick_name = #{nickName,jdbcType=VARCHAR},
+			</if>
+
+			<if test="birthday != null">
+				birthday = #{birthday,jdbcType=DATE},
+			</if>
+			<if test="gradeSort != null">
+				grade_sort = #{gradeSort,jdbcType=INTEGER},
+			</if>
+			<if test="vipScore != null">
+				vip_score = #{vipScore,jdbcType=INTEGER},
+			</if>
+			<if test="phone != null">
+				phone = #{phone,jdbcType=VARCHAR},
+			</if>
+			<if test="email != null">
+				email = #{email,jdbcType=VARCHAR},
+			</if>
+			<if test="provinceId != null">
+				province_id = #{provinceId,jdbcType=INTEGER},
+			</if>
+			<if test="cityId != null">
+				city_id = #{cityId,jdbcType=INTEGER},
+			</if>
+			<if test="districtId != null">
+				district_id = #{districtId,jdbcType=INTEGER},
+			</if>
+			<if test="address != null">
+				address = #{address,jdbcType=VARCHAR},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=TINYINT},
+			</if>
+			<if test="objectId != null">
+				object_id = #{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+</mapper>

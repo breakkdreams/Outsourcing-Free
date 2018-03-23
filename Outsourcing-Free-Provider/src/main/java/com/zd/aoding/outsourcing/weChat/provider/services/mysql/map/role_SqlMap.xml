@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace用于java代码调用时识别指定xml的mapper文件 -->
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RoleDO">
+	<!-- 配置ORM映射 -->
+	<resultMap id="roleMap" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RoleDO">
+		<id property="roleId" column="role_id" javaType="int" jdbcType="INTEGER"></id>
+		<result property="roleName" column="role_name" javaType="String" jdbcType="VARCHAR" />
+		<result property="type" column="type" javaType="int" jdbcType="INTEGER" />
+		<result property="menuList" column="menu_list" javaType="String" jdbcType="VARCHAR" />
+		<result property="managerList" column="manager_list" javaType="String" jdbcType="VARCHAR" />
+		<result property="ownerId" column="owner_id" jdbcType="INTEGER" />
+		<result column="deleted" property="deleted" jdbcType="BIT" />
+		<result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+		<result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+		<result column="object_id" property="objectId" jdbcType="VARCHAR" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		<!-- -->
+		role_id,role_name,menu_list,type , owner_id, object_id, deleted, create_time,
+		update_time
+	</sql>
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		role
+	</sql>
+	<select id="selectParam" parameterType="java.util.Map"
+			resultMap="roleMap">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+			deleted =0
+			<if test="roleName != null"> and role_name = #{roleName}</if>
+			<if test="ownerId != null"> and owner_id = #{ownerId}</if>
+			<if test="type != null"> and type = #{type}</if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+			resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			deleted =0
+			<if test="roleName != null"> and role_name = #{roleName}</if>
+			<if test="ownerId != null"> and owner_id = #{ownerId}</if>
+			<if test="type != null"> and type = #{type}</if>
+		</where>
+	</select>
+
+	<select id="selectPk" parameterType="java.lang.Integer"
+			resultMap="roleMap">
+		<!-- -->
+		select
+		*
+		from role
+		where role_id= #{roleId ,jdbcType=INTEGER}
+	</select>
+	<!-- 修改自增主键id -->
+	<insert id="insert" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RoleDO"
+			useGeneratedKeys="true" keyProperty="id">
+		<!-- -->
+		insert into <include refid="tableName" />
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="roleId != null">
+				role_id,
+			</if>
+			<if test="roleName != null">
+				role_name,
+			</if>
+			<if test="type != null">
+				type,
+			</if>
+			<if test="menuList != null">
+				menu_list,
+			</if>
+			<if test="managerList != null">
+				manager_list,
+			</if>
+			<if test="ownerId != null">
+				owner_id,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+
+			<if test="roleId != null">
+				#{roleId,jdbcType=INTEGER},
+			</if>
+			<if test="roleName != null">
+				#{roleName,jdbcType=VARCHAR},
+			</if>
+			<if test="type != null">
+				#{type,jdbcType=INTEGER},
+			</if>
+			<if test="menuList != null">
+				#{menuList,jdbcType=VARCHAR},
+			</if>
+			<if test="managerList != null">
+				#{managerList,jdbcType=VARCHAR},
+			</if>
+			<if test="ownerId != null">
+				#{ownerId,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=TINYINT},
+			</if>
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RoleDO">
+		<!-- -->
+		update <include refid="tableName" />
+		<set>
+			<if test="roleName != null">
+				role_name = #{roleName,jdbcType=VARCHAR},
+			</if>
+			<if test="type != null">
+				type = #{type,jdbcType=INTEGER},
+			</if>
+			<if test="menuList != null">
+				menu_list = #{menuList,jdbcType=INTEGER},
+			</if>
+			<if test="ownerId != null">
+				owner_id = #{ownerId,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=TINYINT},
+			</if>
+			<if test="objectId != null">
+				object_id = #{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where role_id = #{roleId,jdbcType=INTEGER}
+	</update>
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+			resultMap="roleMap">
+		${sql}
+	</select>
+</mapper>

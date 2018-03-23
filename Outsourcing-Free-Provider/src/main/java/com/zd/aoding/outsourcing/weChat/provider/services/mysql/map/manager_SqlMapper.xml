@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ManagerDO">
+	<resultMap id="BaseResultMap" type="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ManagerDO">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="name" jdbcType="VARCHAR" property="name" />
+		<result column="phone" jdbcType="VARCHAR" property="phone" />
+		<result column="object_id" jdbcType="VARCHAR" property="objectId" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="deleted" jdbcType="BIT" property="deleted" />
+		<result column="account_id" jdbcType="INTEGER" property="accountId" />
+		<result column="type" jdbcType="INTEGER" property="type" />
+		<result column="owner_id" jdbcType="INTEGER" property="ownerId" />
+		<result column="province_id" jdbcType="INTEGER" property="provinceId" />
+		<result column="city_id" jdbcType="INTEGER" property="cityId" />
+		<result column="district_id" jdbcType="INTEGER" property="districtId" />
+		<result column="lng" jdbcType="DOUBLE" property="lng" />
+		<result column="lat" jdbcType="DOUBLE" property="lat" />
+		<result column="referee_code" jdbcType="VARCHAR" property="refereeCode" />
+		<result column="business_type" jdbcType="INTEGER" property="businessType" />
+		<result column="contacts" jdbcType="VARCHAR" property="contacts" />
+		<result column="images" jdbcType="VARCHAR" property="images" />
+		<result column="content" jdbcType="VARCHAR" property="content" />
+		<result column="rebate" jdbcType="DOUBLE" property="rebate" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		id,name,phone,object_id,create_time,update_time,deleted,account_id,owner_id,type,province_id,city_id,
+		district_id,lng,lat,referee_code,business_type,contacts,images,content,rebate
+	</sql>
+
+	<select id="selectPk" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from manager where id = #{id,jdbcType=INTEGER}
+	</select>
+
+	<insert id="insert" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ManagerDO"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into
+		manager
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="name != null">
+				name,
+			</if>
+			<if test="type != null">
+				type,
+			</if>
+			<if test="ownerId != null">
+				owner_id,
+			</if>
+			<if test="provinceId != null">
+				province_id,
+			</if>
+			<if test="cityId != null">
+				city_id,
+			</if>
+			<if test="districtId != null">
+				district_id,
+			</if>
+			<if test="lng != null">
+				lng,
+			</if>
+			<if test="lat != null">
+				lat,
+			</if>
+			<if test="phone != null">
+				phone,
+			</if>
+			<if test="refereeCode != null">
+				referee_code,
+			</if>
+			<if test="businessType != null">
+				business_type,
+			</if>
+			<if test="accountId != null">
+				account_id,
+			</if>
+			<if test="deleted != null">
+				deleted,
+			</if>
+			<if test="objectId != null">
+				object_id,
+			</if>
+			<if test="createTime != null">
+				create_time,
+			</if>
+			<if test="updateTime != null">
+				update_time,
+			</if>
+			<if test="contacts != null">
+				contacts,
+			</if>
+			<if test="images != null">
+				images,
+			</if>
+			<if test="content != null">
+				content,
+			</if>
+			<if test="rebate != null">
+				rebate,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="name != null">
+				#{name,jdbcType=VARCHAR},
+			</if>
+			<if test="type != null">
+				#{type,jdbcType=INTEGER},
+			</if>
+			<if test="ownerId != null">
+				#{ownerId,jdbcType=INTEGER},
+			</if>
+			<if test="provinceId != null">
+				#{provinceId,jdbcType=INTEGER},
+			</if>
+			<if test="cityId != null">
+				#{cityId,jdbcType=INTEGER},
+			</if>
+			<if test="districtId != null">
+				#{districtId,jdbcType=INTEGER},
+			</if>
+			<if test="lng != null">
+				#{lng,jdbcType=DOUBLE},
+			</if>
+			<if test="lat != null">
+				#{lat,jdbcType=DOUBLE},
+			</if>
+			<if test="phone != null">
+				#{phone,jdbcType=VARCHAR},
+			</if>
+			<if test="refereeCode != null">
+				#{refereeCode,jdbcType=VARCHAR},
+			</if>
+			<if test="businessType != null">
+				#{businessType,jdbcType=INTEGER},
+			</if>
+			<if test="accountId != null">
+				#{accountId,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				#{deleted,jdbcType=INTEGER},
+			</if>
+			<if test="objectId != null">
+				#{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="contacts != null">
+				#{contacts,jdbcType=VARCHAR},
+			</if>
+			<if test="images != null">
+				#{images,jdbcType=VARCHAR},
+			</if>
+			<if test="content != null">
+				#{content,jdbcType=VARCHAR},
+			</if>
+			<if test="rebate != null">
+				#{rebate,jdbcType=DOUBLE},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ManagerDO">
+		update
+		manager
+		<set>
+			<if test="name != null">
+				name = #{name,jdbcType=VARCHAR},
+			</if>
+			<if test="phone != null">
+				phone = #{phone,jdbcType=VARCHAR},
+			</if>
+			<if test="accountId != null">
+				account_id = #{accountId,jdbcType=INTEGER},
+			</if>
+			<if test="provinceId != null">
+				province_id = #{provinceId,jdbcType=INTEGER},
+			</if>
+			<if test="cityId != null">
+				city_id = #{cityId,jdbcType=INTEGER},
+			</if>
+			<if test="districtId != null">
+				district_id = #{districtId,jdbcType=INTEGER},
+			</if>
+			<if test="lng != null">
+				lng = #{lng,jdbcType=DOUBLE},
+			</if>
+			<if test="lat != null">
+				lat = #{lat,jdbcType=DOUBLE},
+			</if>
+			<if test="refereeCode != null">
+				referee_code = #{refereeCode,jdbcType=VARCHAR},
+			</if>
+			<if test="businessType != null">
+				business_type = #{businessType,jdbcType=INTEGER},
+			</if>
+			<if test="deleted != null">
+				deleted = #{deleted,jdbcType=INTEGER},
+			</if>
+			<if test="objectId != null">
+				object_id = #{objectId,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="contacts != null">
+				contacts = #{contacts,jdbcType=VARCHAR},
+			</if>
+			<if test="images != null">
+				images = #{images,jdbcType=VARCHAR},
+			</if>
+			<if test="content != null">
+				content = #{content,jdbcType=VARCHAR},
+			</if>
+			<if test="rebate != null">
+				rebate = #{rebate,jdbcType=DOUBLE},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+	<sql id="Page_Main_Column">
+		<!--分页查询主要字段 -->
+		*
+	</sql>
+	<sql id="tableName">
+		<!--查询表格名字 -->
+		manager
+	</sql>
+
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT
+		<include refid="Page_Main_Column" />
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="accountId != null"> and account_id = #{accountId}</if>
+			<if test="provinceId != null"> and province_id = #{provinceId}</if>
+			<if test="businessType != null"> and business_type = #{businessType}</if>
+			<if test="refereeCode != null"> and referee_code = #{refereeCode}</if>
+			<if test="cityId != null"> and city_id = #{cityId}</if>
+			<if test="districtId != null"> and district_id = #{districtId}</if>
+			<if test="lng != null"> and lng = #{lng}</if>
+			<if test="lat != null"> and lat = #{lat}</if>
+			<if test="type != null"> and type = #{type}</if>
+            <if test="ownerId != null"> and owner_id = #{ownerId}</if>
+			<if test="accountIds != null">
+				and account_id in
+				<foreach collection="accountIds" item="id" open="("
+					separator="," close=")">
+					#{id}
+				</foreach>
+			</if>
+		</where>
+		<if test="groupColumn != null">
+			group by #{groupColumn}
+		</if>
+		<if test="orderColumn != null">
+			order by ${orderColumn}
+			<if test="orderTurn != null">
+				${orderTurn}
+			</if>
+		</if>
+	</select>
+
+	<select id="count" resultType="int">
+		SELECT count(*) FROM
+		<include refid="tableName" />
+	</select>
+
+
+	<select id="countParam" parameterType="java.util.Map"
+		resultType="int">
+		SELECT
+		count(*)
+		FROM
+		<include refid="tableName" />
+		<where>
+			<if test="deleted != null"> and deleted = #{deleted}</if>
+			<if test="accountId != null"> and account_id = #{accountId}</if>
+			<if test="provinceId != null"> and province_id = #{provinceId}</if>
+			<if test="businessType != null"> and business_type = #{businessType}</if>
+			<if test="refereeCode != null"> and referee_code = #{refereeCode}</if>
+			<if test="cityId != null"> and city_id = #{cityId}</if>
+			<if test="districtId != null"> and district_id = #{districtId}</if>
+			<if test="lng != null"> and lng = #{lng}</if>
+			<if test="lat != null"> and lat = #{lat}</if>
+			<if test="type != null"> and type = #{type}</if>
+			<if test="ownerId != null"> and owner_id = #{ownerId}</if>
+			<if test="accountIds != null">
+                and account_id in
+                <foreach collection="accountIds" item="id" open="("
+                    separator="," close=")">
+                    #{id}
+                </foreach>
+            </if>
+		</where>
+	</select>
+
+
+	<select id="selectCustom" parameterType="com.zd.aoding.base.adapter.SQLAdapter"
+		resultMap="BaseResultMap">
+		${sql}
+	</select>
+
+</mapper>

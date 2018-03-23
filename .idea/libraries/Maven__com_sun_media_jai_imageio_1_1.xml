@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sun.media:jai-imageio:1.1">
+    <CLASSES>
+      <root url="jar:///mavlib/com/sun/media/jai-imageio/1.1/jai-imageio-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar:///mavlib/com/sun/media/jai-imageio/1.1/jai-imageio-1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar:///mavlib/com/sun/media/jai-imageio/1.1/jai-imageio-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
