@@ -111,8 +111,7 @@ public class ShoppingUserController {
 			@ApiParam(required = true, name = "goodsId", value = "产品id") @RequestParam(value = "goodsId", required = true) String goodsId,
 			@ApiParam(required = true, name = "optionId", value = "规格配置id(无配置则设为0，有配置没选择也返回300)") @RequestParam(value = "optionId", required = true) String optionId,
 			@ApiParam(required = false, name = "quantity", value = "数量") @RequestParam(value = "quantity", required = false) String quantity,
-			// @ApiParam(required = true, name = "type", value = "类型 1积分 2现金")
-			// @RequestParam(value = "type", required = false) String type,
+			// @ApiParam(required = true, name = "type", value = "类型 1积分 2现金")@RequestParam(value = "type", required = false) String type,
 			@ApiParam(required = false, name = "iosCode", value = "iosCode") @RequestParam(value = "iosCode", required = false) String iosCode,
 			HttpServletRequest request) {
 		try {
