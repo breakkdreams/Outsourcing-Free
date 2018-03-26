@@ -111,17 +111,16 @@ public class ShoppingUserController {
 			@ApiParam(required = true, name = "goodsId", value = "产品id") @RequestParam(value = "goodsId", required = true) String goodsId,
 			@ApiParam(required = true, name = "optionId", value = "规格配置id(无配置则设为0，有配置没选择也返回300)") @RequestParam(value = "optionId", required = true) String optionId,
 			@ApiParam(required = false, name = "quantity", value = "数量") @RequestParam(value = "quantity", required = false) String quantity,
-			// @ApiParam(required = true, name = "type", value = "类型 1积分 2现金")@RequestParam(value = "type", required = false) String type,
+			 @ApiParam(required = true, name = "type", value = "类型 1积分 2现金")@RequestParam(value = "type", required = false) String type,
 			@ApiParam(required = false, name = "iosCode", value = "iosCode") @RequestParam(value = "iosCode", required = false) String iosCode,
 			HttpServletRequest request) {
 		try {
 			UserBO sessionUser = (UserBO) sessionFacade.checkLoginSession(request, SessionConstant.LOGIN_TYPE_USER);
 			if (sessionUser != null) {
-				if (!StringUtil.isNumber(goodsId) || !StringUtil.isNumber(optionId)) {
+				if (!StringUtil.isNumber(goodsId) || !StringUtil.isNumber(optionId) || !StringUtil.isNumber(type)) {
 					return ResponseUtil.paramErrorResultString("参数错误");
 				}
 				if (ConfigTemp.not_required_id_0.equals(optionId)) {
-					System.out.println("=='0'");
 					List<GoodsSpecBO> list = goodsSpecFacade.getGoodsSpecVoByGoodId(goodsId);
 					if (list != null && list.size() > 0) {
 						return ResponseUtil.showMSGResultString("未选择配置");
@@ -166,9 +165,9 @@ public class ShoppingUserController {
 						return ResponseUtil.showMSGResultString("购物车已有" + goodsNum + "件商品,库存不足，无法加入购物车");
 					}
 				}
-				// 查看购物车是否存在该商户
+				// 查看购物车是否存在该用户
 				ShoppingCartBO shoppingCartVo = cartFacade.getUserShoppingCartVoByDealerId(sessionUser.getUserId(), 1,
-						"0", 1);
+						"0", Integer.parseInt(type));
 				if (shoppingCartVo != null) {
 					// 查看购物车中是否有该配置产品
 					ShoppingCartItemBO shoppingCartItemVo = cartItemFacade.getShoppingCartItemVoByGoodsIdAndOptionId(
@@ -211,7 +210,7 @@ public class ShoppingUserController {
 						}
 					}
 				} else {
-					ShoppingCartDO newShoppingCartPo = new ShoppingCartDO("0", sessionUser.getUserId(), 1, 1);
+					ShoppingCartDO newShoppingCartPo = new ShoppingCartDO("0", sessionUser.getUserId(), 1, Integer.parseInt(type));
 					int j = cartFacade.insert(newShoppingCartPo);
 					if (j == 1) {
 						if (ConfigTemp.not_required_id_0.equals(optionId)) {
