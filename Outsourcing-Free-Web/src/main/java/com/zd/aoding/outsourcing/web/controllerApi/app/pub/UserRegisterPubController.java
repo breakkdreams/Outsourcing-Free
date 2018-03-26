@@ -54,7 +54,7 @@ public class UserRegisterPubController {
 			HttpServletRequest request) {
 		try {
 			if ("".equals(regCode) || regCode == null) {
-				return ResponseUtil.errorResultString("未填写验证码");
+				return ResponseUtil.showMSGResultString("未填写验证码");
 			}
 			String code = sessionService.checkMemcache(SMSManager.getREGCode(phone));
 			if (!regCode.equals(code)) {

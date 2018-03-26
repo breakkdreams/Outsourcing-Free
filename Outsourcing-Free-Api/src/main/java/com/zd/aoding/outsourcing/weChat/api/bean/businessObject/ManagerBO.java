@@ -43,6 +43,8 @@ public class ManagerBO {
 	private String content;
 	//返点
 	private Double rebate;
+	//访问量
+	private Integer totalVisit;
     
 	public ManagerBO() {
 		super();
@@ -67,6 +69,7 @@ public class ManagerBO {
 		this.imagesStr = Config.IMG_SERVER + managerPo.getImages();
 		this.content = managerPo.getContent();
 		this.rebate = managerPo.getRebate();
+		this.totalVisit = managerPo.getTotalVisit();
 	}
 	public Integer getManagerId() {
 		return managerId;
@@ -187,5 +190,13 @@ public class ManagerBO {
 
 	public void setImagesStr(String imagesStr) {
 		this.imagesStr = imagesStr;
+	}
+
+	public Integer getTotalVisit() {
+		return totalVisit;
+	}
+
+	public void setTotalVisit(Integer totalVisit) {
+		this.totalVisit = totalVisit;
 	}
 }

@@ -77,7 +77,6 @@ public class UserLoginPubController {
 	 * @Title: login
 	 * @Description: 账号密码登陆
 	 * @param loginType 登陆类型（user/dealer）
-	 * @param forwordJsp 跳转界面（可为空）
 	 * @param username
 	 * @param password
 	 * @param request
@@ -89,17 +88,16 @@ public class UserLoginPubController {
 			RequestMethod.GET }, produces = "application/x-www-form-urlencoded; charset=utf-8")
 	@ApiOperation(value = "账号密码登陆", notes = "详细描述", response = ResponseUtil.class)
 	public String login(
-			@ApiParam(required = false, name = "forwordJsp", value = "跳转界面") @RequestParam(value = "forwordJsp", required = false) String forwordJsp,
 			@ApiParam(required = true, name = "loginType", value = "登陆类型:用户‘userVo’") @RequestParam(value = "loginType", required = true) String loginType,
 			@ApiParam(required = true, name = "username", value = "用户名（即手机号）") @RequestParam(value = "username", required = true) String username,
 			@ApiParam(required = true, name = "password", value = "密码") @RequestParam(value = "password", required = true) String password,
 			HttpServletRequest request) {
 		try {
 			if (StringUtil.isNULL(loginType) || StringUtil.isNULL(username) || StringUtil.isNULL(password)) {
-				return ResponseUtil.paramErrorResultString("参数错误");
+				return ResponseUtil.showMSGResultString("参数错误");
 			}
 			if (!SessionConstant.LOGIN_TYPE_USER.equals(loginType)) {
-				return ResponseUtil.paramErrorResultString("非法登录");
+				return ResponseUtil.showMSGResultString("非法登录");
 			}
 			AccountDO accountPo = accountFacade.getUserAccountPoByPhone(username);
 			if (accountPo != null) {

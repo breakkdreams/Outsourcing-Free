@@ -1,6 +1,8 @@
 package com.zd.aoding.outsourcing.weChat.provider.facade.impl;
 
 import com.zd.aoding.common.log.LogUtil;
+import com.zd.aoding.common.page.PageEntity;
+import com.zd.aoding.common.page.PageResult;
 import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.ManagerBO;
 import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.ManagerDO;
 import com.zd.aoding.outsourcing.weChat.api.facade.ManagerFacade;
@@ -8,6 +10,7 @@ import com.zd.aoding.outsourcing.weChat.api.services.mysql.ManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -56,6 +59,23 @@ public class ManagerFacadeImpl implements ManagerFacade {
 			return new ManagerBO(list.get(0));
 		}
 		return null;
+	}
+
+	@Override
+	public PageResult<ManagerBO> getPageManagerVo(PageEntity pageEntity) {
+		PageResult<ManagerBO> pageResult = new PageResult<ManagerBO>();
+		List<ManagerDO> list = managerService.getPagination(pageEntity);
+		List<ManagerBO> listVo = new ArrayList<>();
+		if (list != null && list.size() > 0) {
+			for (ManagerDO managerDO : list) {
+				listVo.add(new ManagerBO(managerDO));
+			}
+		}
+		pageResult.setResultList(listVo);
+		pageResult.setCurrentPage(pageEntity.getPage());
+		pageResult.setPageSize(pageEntity.getSize());
+		pageResult.setTotalSize(managerService.count(pageEntity.getParams()));
+		return pageResult;
 	}
 
 

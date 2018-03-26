@@ -55,8 +55,8 @@ public class SMSManager {
 	 */
 	public static String generateCode() {
 		String code = "123456";
-		 String num = (new Date().getTime()) + "";
-		 code = num.subSequence(7, 13).toString();
+//		 String num = (new Date().getTime()) + "";
+//		 code = num.subSequence(7, 13).toString();
 		return code;
 	}
 	/**

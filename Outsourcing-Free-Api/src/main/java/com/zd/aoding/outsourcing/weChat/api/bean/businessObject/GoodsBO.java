@@ -100,7 +100,11 @@ public class GoodsBO {
 	private Integer rebate;
 	@ApiModelProperty("类型id")
 	private Integer typeId;
-	
+	@ApiModelProperty("是否在积分区出售")
+	private Integer scoreOpen;
+	@ApiModelProperty("是否在奖金区出售")
+	private Integer bonusOpen;
+
 	@ApiModelProperty("销量")
 	private Integer sales;
 	@ApiModelProperty("真实销量")
@@ -160,6 +164,8 @@ public class GoodsBO {
 		this.type = goodsPo.getType();
 		this.dealerId = goodsPo.getDealerId();
 		this.firstCatagory = goodsPo.getFirstCatagory();
+		this.scoreOpen = goodsPo.getScoreOpen();
+		this.bonusOpen = goodsPo.getBonusOpen();
 		this.secondCatagory = goodsPo.getSecondCatagory();
 		this.thirdCatagory = goodsPo.getThirdCatagory();
 		this.totalStock = goodsPo.getTotalStock();
@@ -203,6 +209,8 @@ public class GoodsBO {
 		this.rebate = goodsPo.getRebate();
 		this.imgsUrl = goodsPo.getImgsUrl();
 		this.type = goodsPo.getType();
+		this.scoreOpen = goodsPo.getScoreOpen();
+		this.bonusOpen = goodsPo.getBonusOpen();
 		this.typeId = goodsPo.getTypeId();
 		this.sales = goodsPo.getSales();
 		this.salesreal = goodsPo.getSalesreal();
@@ -507,5 +515,21 @@ public class GoodsBO {
 	}
 	public void setTypeId(Integer typeId) {
 		this.typeId = typeId;
+	}
+
+	public Integer getScoreOpen() {
+		return scoreOpen;
+	}
+
+	public void setScoreOpen(Integer scoreOpen) {
+		this.scoreOpen = scoreOpen;
+	}
+
+	public Integer getBonusOpen() {
+		return bonusOpen;
+	}
+
+	public void setBonusOpen(Integer bonusOpen) {
+		this.bonusOpen = bonusOpen;
 	}
 }

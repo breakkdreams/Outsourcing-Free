@@ -97,6 +97,8 @@ public class GoodsDealerController {
             @ApiParam(required = false, name = "barCode", value = "条形码") @RequestParam(value = "barCode", required = false) String barCode,
             @ApiParam(required = false, name = "integralDeductible", value = "积分抵扣价") @RequestParam(value = "integralDeductible", required = false) String integralDeductible,
             @ApiParam(required = false, name = "typeId", value = "类型id") @RequestParam(value = "typeId", required = false) String typeId,
+            @ApiParam(required = false, name = "scoreOpen", value = "是否在积分区出售") @RequestParam(value = "scoreOpen", required = false) String scoreOpen,
+            @ApiParam(required = false, name = "bonusOpen", value = "是否在奖金区出售") @RequestParam(value = "bonusOpen", required = false) String bonusOpen,
             HttpServletRequest request) {
         try {
 				@SuppressWarnings("unchecked")
@@ -142,6 +144,8 @@ public class GoodsDealerController {
                     	 double integralPercent = Integer.parseInt(integralDeductible)/Double.parseDouble(marketPrice);
                          goodsDo.setIntegralPercent(integralPercent);
                     }
+                    goodsDo.setScoreOpen(Integer.parseInt(scoreOpen));
+                    goodsDo.setBonusOpen(Integer.parseInt(bonusOpen));
                     goodsDo.setMarketPrice(Double.parseDouble(marketPrice));
                     goodsDo.insertInit();
                     int i = goodsFacade.insertGoodsPo(goodsDo);
@@ -221,6 +225,8 @@ public class GoodsDealerController {
             @ApiParam(required = false, name = "integralDeductible", value = "积分抵扣价") @RequestParam(value = "integralDeductible", required = false) String integralDeductible,
             @ApiParam(required = false, name = "marketPrice", value = "售卖价") @RequestParam(value = "marketPrice", required = false) String marketPrice,
             @ApiParam(required = false, name = "typeId", value = "类型id") @RequestParam(value = "typeId", required = false) String typeId,
+            @ApiParam(required = false, name = "scoreOpen", value = "是否在积分区出售") @RequestParam(value = "scoreOpen", required = false) String scoreOpen,
+            @ApiParam(required = false, name = "bonusOpen", value = "是否在奖金区出售") @RequestParam(value = "bonusOpen", required = false) String bonusOpen,
             HttpServletRequest request) {
         try {
                 @SuppressWarnings("unchecked")
@@ -318,7 +324,13 @@ public class GoodsDealerController {
                 		double integralPercent = Integer.parseInt(integralDeductible)/Double.parseDouble(marketPrice);
                         goodsDo.setIntegralPercent(integralPercent);
                 	}
-                   
+                    if(StringUtil.isNumber(scoreOpen)){
+                        goodsDo.setScoreOpen(Integer.parseInt(scoreOpen));
+                    }
+                    if(StringUtil.isNumber(bonusOpen)){
+                        goodsDo.setBonusOpen(Integer.parseInt(bonusOpen));
+                    }
+
                     int i = goodsFacade.updateGoodsPo(goodsDo);
                     if (i == 1) {
                     	//操作日志

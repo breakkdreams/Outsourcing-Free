@@ -1,4 +1,4 @@
-2018-03-23 08:38:24 [main:24423]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@291c17d1]
+2018-03-26 08:45:45 [main:21601]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@f3a50cc]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.post
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -71,7 +71,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28400]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@70ec3e18]
+2018-03-26 08:45:49 [main:25064]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4d90bbf7]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -144,7 +144,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28414]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@246e14de]
+2018-03-26 08:45:49 [main:25076]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@1c4b5bb]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -217,7 +217,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28423]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@40b53d00]
+2018-03-26 08:45:49 [main:25091]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5ed1375a]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -290,7 +290,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28433]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5b45a812]
+2018-03-26 08:45:49 [main:25105]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@f0a36b4]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -363,7 +363,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28443]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4fe51448]
+2018-03-26 08:45:49 [main:25118]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6e675030]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -436,7 +436,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28455]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@24158287]
+2018-03-26 08:45:49 [main:25131]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@394860cb]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -509,7 +509,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28468]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5da58723]
+2018-03-26 08:45:49 [main:25142]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@523636f4]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -582,7 +582,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:38:28 [main:28492]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@31b89aba]
+2018-03-26 08:45:49 [main:25165]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@70def9b4]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -655,370 +655,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:39:00 [scheduler_Worker-7:60473]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:39:00 [scheduler_Worker-7:60476]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:40:00 [scheduler_Worker-4:120324]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:40:00 [scheduler_Worker-4:120325]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:41:00 [scheduler_Worker-1:180306]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:41:00 [scheduler_Worker-1:180307]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:42:00 [scheduler_Worker-8:240307]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:42:00 [scheduler_Worker-8:240308]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:43:00 [scheduler_Worker-5:300304]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:43:00 [scheduler_Worker-5:300305]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:44:00 [scheduler_Worker-2:360306]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:44:00 [scheduler_Worker-2:360315]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:45:00 [scheduler_Worker-9:420314]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:45:00 [scheduler_Worker-9:420317]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:46:00 [scheduler_Worker-6:480304]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:46:00 [scheduler_Worker-6:480305]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:47:00 [scheduler_Worker-3:540305]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:47:00 [scheduler_Worker-3:540312]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:48:00 [scheduler_Worker-10:600345]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:48:00 [scheduler_Worker-10:600348]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:50:00 [scheduler_Worker-2:16980]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:50:00 [scheduler_Worker-2:16985]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:50:01 [main:18322]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@327b9fad]
+2018-03-26 09:46:40 [main:13325]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5752f99]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.post
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1091,7 +728,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:05 [main:22276]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6124d9ce]
+2018-03-26 09:46:43 [main:16156]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6dd0f17c]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1164,7 +801,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:06 [main:22746]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4c8f4624]
+2018-03-26 09:46:43 [main:16179]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@56a36fa9]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1237,7 +874,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:06 [main:22764]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@295c6790]
+2018-03-26 09:46:43 [main:16191]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4445d7aa]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1310,7 +947,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:06 [main:22792]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@9cc1d26]
+2018-03-26 09:46:43 [main:16201]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@181390dd]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1383,7 +1020,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:06 [main:22834]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6936e900]
+2018-03-26 09:46:43 [main:16212]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@674c0bda]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1456,7 +1093,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:06 [main:22869]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@432fed39]
+2018-03-26 09:46:43 [main:16224]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@778aba7c]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1529,7 +1166,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:06 [main:22890]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@7195700]
+2018-03-26 09:46:43 [main:16236]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@46005a60]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1602,7 +1239,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:50:06 [main:22922]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@607dcbed]
+2018-03-26 09:46:43 [main:16256]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@2ad02e6f]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1675,139 +1312,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 08:51:00 [scheduler_Worker-9:76669]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:51:00 [scheduler_Worker-9:76673]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:52:00 [scheduler_Worker-6:136684]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:52:00 [scheduler_Worker-6:136690]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:53:00 [scheduler_Worker-3:196672]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:53:00 [scheduler_Worker-3:196673]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:54:00 [scheduler_Worker-10:256680]-[ERROR] Job DEFAULT.jobDetail5 threw an unhandled Exception: 
-org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:54:00 [scheduler_Worker-10:256681]-[ERROR] Job (DEFAULT.jobDetail5 threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'payTimeWork' on target class [class com.zd.aoding.outsourcing.web.controllerApi.quart.testQ] failed; nested exception is java.lang.NullPointerException
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:266)
-	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-Caused by: java.lang.NullPointerException
-	at com.zd.aoding.outsourcing.web.controllerApi.quart.testQ.payTimeWork(testQ.java:261)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)
-	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:257)
-	... 3 more
-2018-03-23 08:59:56 [main:17707]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@18620355]
+2018-03-26 10:03:53 [main:14679]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4eb642d6]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.post
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1880,7 +1385,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22345]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@28f57fbd]
+2018-03-26 10:03:55 [main:17130]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@79a76ebe]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -1953,7 +1458,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22371]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6fadfdee]
+2018-03-26 10:03:55 [main:17148]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5ecb03ac]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2026,7 +1531,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22389]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@22f19ec2]
+2018-03-26 10:03:55 [main:17160]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4d90bbf7]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2099,7 +1604,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22405]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@52460cc0]
+2018-03-26 10:03:55 [main:17170]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@1c4b5bb]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2172,7 +1677,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22427]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@71933426]
+2018-03-26 10:03:55 [main:17183]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5ed1375a]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2245,7 +1750,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22443]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@378daed0]
+2018-03-26 10:03:55 [main:17197]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@f0a36b4]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2318,7 +1823,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22460]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@13fb34f7]
+2018-03-26 10:03:55 [main:17210]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6e675030]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2391,7 +1896,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 09:00:01 [main:22498]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4d85bc7b]
+2018-03-26 10:03:55 [main:17232]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@744c0896]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2464,7 +1969,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:22 [main:23894]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@1d5d2679]
+2018-03-26 10:18:49 [main:15208]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@271546bb]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.post
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2537,7 +2042,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30561]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@73bd5cbf]
+2018-03-26 10:18:52 [main:18215]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@197708e5]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2610,7 +2115,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30608]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6b8aae21]
+2018-03-26 10:18:52 [main:18224]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@79892657]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2683,7 +2188,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30625]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6d9210a3]
+2018-03-26 10:18:53 [main:18233]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@678d6b22]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2756,7 +2261,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30647]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@363e893d]
+2018-03-26 10:18:53 [main:18244]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@40c1b7f0]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2829,7 +2334,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30666]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@47b36fc7]
+2018-03-26 10:18:53 [main:18259]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3ecaccce]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2902,7 +2407,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30685]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6b4363d8]
+2018-03-26 10:18:53 [main:18272]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6551f756]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -2975,7 +2480,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30708]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@7aa6c22a]
+2018-03-26 10:18:53 [main:18281]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@1510fb8]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3048,7 +2553,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 11:03:29 [main:30899]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@137680be]
+2018-03-26 10:18:53 [main:18295]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@d50c53d]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3121,7 +2626,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:37 [main:14577]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6274cb39]
+2018-03-26 10:30:22 [main:22573]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@519d7b43]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.post
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3194,7 +2699,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16903]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3ca3771]
+2018-03-26 10:30:25 [main:25915]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4a4da43b]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3267,7 +2772,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16918]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@686861f7]
+2018-03-26 10:30:25 [main:25986]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@723afcf2]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3340,7 +2845,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16930]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6f3da070]
+2018-03-26 10:30:25 [main:25999]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@61072496]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3413,7 +2918,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16943]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@25d6d6ca]
+2018-03-26 10:30:26 [main:26009]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@47718282]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3486,7 +2991,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16955]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@797d93db]
+2018-03-26 10:30:26 [main:26020]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@656bfdc3]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3559,7 +3064,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16966]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3118440c]
+2018-03-26 10:30:26 [main:26051]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@7b002952]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3632,7 +3137,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16975]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@1c2c29c8]
+2018-03-26 10:30:26 [main:26063]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@335aac18]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3705,7 +3210,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:35:39 [main:16993]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@7ef01f9c]
+2018-03-26 10:30:26 [main:26087]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@931786c]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3778,7 +3283,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:46 [main:28774]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@24cc130f]
+2018-03-26 11:27:45 [main:17375]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@7c48d365]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.post
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3851,7 +3356,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35210]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3ad26b98]
+2018-03-26 11:27:49 [main:20993]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@212bfa1c]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3924,7 +3429,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35229]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@210352d4]
+2018-03-26 11:27:49 [main:21010]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3df33143]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -3997,7 +3502,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35261]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3975ba26]
+2018-03-26 11:27:49 [main:21024]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@2efe0b17]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -4070,7 +3575,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35280]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4542f084]
+2018-03-26 11:27:49 [main:21039]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@41037a7f]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -4143,7 +3648,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35292]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@1559f1e1]
+2018-03-26 11:27:49 [main:21052]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@53ec9570]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -4216,7 +3721,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35306]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3ff82fbb]
+2018-03-26 11:27:49 [main:21065]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@a7fac9c]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -4289,7 +3794,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35318]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5b828956]
+2018-03-26 11:27:49 [main:21092]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@ab02f90]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
@@ -4362,664 +3867,7 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:55:53 [main:35354]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5afbfbc2]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:33 [main:16379]-[ERROR] Invalid http method: postValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@3a1d648e]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.post
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20140]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@f23e6e7]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20159]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@48fb64bb]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20169]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@79a76ebe]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20181]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5ecb03ac]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20193]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@4d90bbf7]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20202]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@1c4b5bb]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20211]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5ed1375a]
-java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
-	at java.lang.Enum.valueOf(Enum.java:236)
-	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:25)
-	at com.mangofactory.swagger.readers.operation.OperationHttpMethodReader.execute(OperationHttpMethodReader.java:11)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.readers.ApiOperationReader.execute(ApiOperationReader.java:112)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:48)
-	at com.mangofactory.swagger.readers.ApiDescriptionReader.execute(ApiDescriptionReader.java:19)
-	at com.mangofactory.swagger.core.CommandExecutor.execute(CommandExecutor.java:13)
-	at com.mangofactory.swagger.scanners.ApiListingScanner.scan(ApiListingScanner.java:100)
-	at com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(SwaggerApiResourceListing.java:72)
-	at com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin.initialize(SwaggerSpringMvcPlugin.java:427)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:51)
-	at com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(SwaggerPluginAdapter.java:21)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:773)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
-	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:433)
-	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:256)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:612)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1218)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:500)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:147)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:117)
-	at org.mortbay.jetty.Server.doStart(Server.java:217)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
-	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:345)
-	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:286)
-	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:204)
-	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:183)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-2018-03-23 14:59:37 [main:20231]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@7574ba4a]
+2018-03-26 11:27:49 [main:21129]-[ERROR] Invalid http method: getValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@41dce56e]
 java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.get
 	at java.lang.Enum.valueOf(Enum.java:236)
 	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:37)

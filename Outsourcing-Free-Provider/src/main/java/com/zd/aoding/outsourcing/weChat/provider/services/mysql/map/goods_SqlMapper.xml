@@ -529,6 +529,9 @@
 			<if test="scoreOpen != null">
 				score_open = #{scoreOpen,jdbcType=INTEGER},
 			</if>
+			<if test="bonusOpen != null">
+				bonus_open = #{bonusOpen,jdbcType=INTEGER},
+			</if>
 			<if test="showStock != null">
 				show_stock = #{showStock,jdbcType=INTEGER},
 			</if>
@@ -570,6 +573,8 @@
 			<if test="typeId != null"> and type_id = #{typeId}</if>
 			<if test="barCode != null"> and bar_code = #{barCode}</if>
 			<if test="rebate != null"> and rebate = #{rebate}</if>
+			<if test="scoreOpen != null"> and score_open = #{scoreOpen}</if>
+			<if test="bonusOpen != null"> and bonus_open = #{bonusOpen}</if>
 			<if test="modelId != null"> and model_id = #{modelId}</if>
 			<if test="position != null"> and position = #{position}</if>
 			<if test="chosen != null"> and chosen = #{chosen}</if>
@@ -622,6 +627,8 @@
 			<if test="deleted != null"> and deleted = #{deleted}</if>
 			<if test="typeId != null"> and type_id = #{typeId}</if>
 			<if test="barCode != null"> and bar_code = #{barCode}</if>
+			<if test="scoreOpen != null"> and score_open = #{scoreOpen}</if>
+			<if test="bonusOpen != null"> and bonus_open = #{bonusOpen}</if>
 			<if test="modelId != null"> and model_Id = #{modelId}</if>
 			<if test="rebate != null"> and rebate = #{rebate}</if>
 			<if test="position != null"> and position = #{position}</if>

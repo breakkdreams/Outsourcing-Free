@@ -63,6 +63,8 @@ public class ManagerDO extends DOBase{
     private String content;
     //返点
     private Double rebate;
+    //访问量
+    private Integer totalVisit;
 
     
     
@@ -249,6 +251,14 @@ public class ManagerDO extends DOBase{
 
     public void setRebate(Double rebate) {
         this.rebate = rebate;
+    }
+
+    public Integer getTotalVisit() {
+        return totalVisit;
+    }
+
+    public void setTotalVisit(Integer totalVisit) {
+        this.totalVisit = totalVisit;
     }
 
     @Override

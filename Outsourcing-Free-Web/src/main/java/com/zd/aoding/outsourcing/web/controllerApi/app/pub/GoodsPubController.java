@@ -99,6 +99,8 @@ public class GoodsPubController {
 			@ApiParam(required = false, name = "categoryId", value = "分类id") @RequestParam(value = "categoryId", required = false) String categoryId,
 			@ApiParam(required = false, name = "sort", value = "排序 1销量 2价格 3积分百分比 4.积分大小 ") @RequestParam(value = "sort", required = false) String sort,
 			@ApiParam(required = false, name = "ascOrDesc", value = "1正序 2倒序  默认倒序") @RequestParam(value = "ascOrDesc", required = false) String ascOrDesc,
+			@ApiParam(required = false, name = "scoreOpen", value = "是否在积分区出售(1是 0不是)") @RequestParam(value = "scoreOpen", required = false) String scoreOpen,
+			@ApiParam(required = false, name = "bonusOpen", value = "是否在奖金区出售(1是 0不是)") @RequestParam(value = "bonusOpen", required = false) String bonusOpen,
 //			@ApiParam(required = false, name = "goodsType", value = "积分商城或奖金商城 0 全部 1积分 2奖金") @RequestParam(value = "goodsType", required = false) String goodsType,
 			HttpServletRequest request) {
 		try {
@@ -140,6 +142,12 @@ public class GoodsPubController {
 			Map<String, Object> param = new HashMap<String, Object>();
 			param.put("deleted", 0);
 			param.put("statusAdmin", GoodsDO.STATUS_SHALL);
+			if(StringUtil.isNumber(scoreOpen)){
+				param.put("scoreOpen", scoreOpen);
+			}
+			if(StringUtil.isNumber(bonusOpen)){
+				param.put("bonusOpen", bonusOpen);
+			}
 //			if((GoodsPo.type_score+"").equals(goodsType)){
 //				param.put("type", GoodsPo.type_score);
 //			}

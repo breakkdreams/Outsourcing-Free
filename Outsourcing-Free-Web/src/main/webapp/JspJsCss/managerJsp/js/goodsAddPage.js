@@ -348,7 +348,9 @@ function addGoods(data) {
 	var integralDeductible = 0;
 	var marketPrice = $("#marketPrice").val();
 	var typeId = $("#typeId").val();
-	
+    var scoreOpen  = $('input[name="scoreOpen"]:checked').val(); //获取被选中Radio的Value值
+    var bonusOpen  = $('input[name="bonusOpen"]:checked').val(); //获取被选中Radio的Value值
+
 	var regPos = /^\d+(\.\d+)?$/; //非负浮点数
 	if (firstCatagory == null || $.trim(firstCatagory) == "") {
 		alert("请选择一级分类");
@@ -418,6 +420,9 @@ function addGoods(data) {
 			"modelId" : modelId,
 			"scorePrice":scorePrice,
 			"typeId":typeId,
+			"scoreOpen":scoreOpen,
+			"bonusOpen":bonusOpen,
+
 		},
 		dataType : "json",
 		type : "post",
@@ -454,6 +459,8 @@ function editGoods() {
 	var integralDeductible = 0;
 	var marketPrice = $("#marketPrice").val();
 	var typeId = $("#typeId").val();
+    var scoreOpen  = $('input[name="scoreOpen"]:checked').val(); //获取被选中Radio的Value值
+    var bonusOpen  = $('input[name="bonusOpen"]:checked').val(); //获取被选中Radio的Value值
 
 	var regPos = /^\d+(\.\d+)?$/; //非负浮点数
 	if (goodsId == null || $.trim(goodsId) == "") {
@@ -523,7 +530,9 @@ function editGoods() {
 			"marketPrice" : marketPrice,
 			"integralDeductible" : integralDeductible,
 			"scorePrice":scorePrice,
-			"typeId":typeId
+			"typeId":typeId,
+            "scoreOpen":scoreOpen,
+            "bonusOpen":bonusOpen,
 		},
 		dataType : "json",
 		type : "post",

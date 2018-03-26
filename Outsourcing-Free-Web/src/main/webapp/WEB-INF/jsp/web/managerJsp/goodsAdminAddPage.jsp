@@ -156,6 +156,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 													onkeyup="value=value.replace(/[^\d]/g,'')" id="scorePrice" /></td>
 											</tr>
 											<tr>
+												<td><label>是否在积分区出售:&nbsp;</label></td>
+												<td class="padding_left_10" style="text-align: left">
+													<input type="radio" name="scoreOpen" value="1" checked="checked"/>是
+													<input type="radio" name="scoreOpen" value="0"/>否
+												</td>
+											</tr>
+											<tr>
+												<td><label>是否在奖金区出售:&nbsp;</label></td>
+												<td class="padding_left_10" style="text-align: left">
+													<input type="radio" name="bonusOpen" value="1" checked="checked"/>是
+													<input type="radio" name="bonusOpen" value="0"/>否
+												</td>
+											</tr>
+											<tr>
 												<td><label>概要描述:&nbsp;</label></td>
 												<td class="padding_left_10" colspan="3"><input
 													type="text" class="form-control" width="220px"
