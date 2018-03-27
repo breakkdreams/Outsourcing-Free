@@ -465,3 +465,5 @@ var getPostageDetailUrl = 'ad/manager/postage/detail.web';
 var editPostageUrl = 'ad/manager/postage/edit.web';
 
 var sendGoodsPage = 'ad/manager/sendGoodsTablePage.web';
+var getAllGoodsSpecPage = 'ad/manager/dealer/goodsSpec/allList.web';
+

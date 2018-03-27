@@ -1,20 +1,5 @@
 package com.zd.aoding.outsourcing.web.controllerApi.management;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.wordnik.swagger.annotations.Api;
@@ -29,20 +14,23 @@ import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.AccountBO;
 import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.GoodsBO;
 import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.GoodsSpecBO;
 import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.RoleBO;
-import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsDO;
-import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsModelDO;
-import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsOptionDO;
-import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsSpecItemDO;
-import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.RecordsDO;
-import com.zd.aoding.outsourcing.weChat.api.facade.GoodsFacade;
-import com.zd.aoding.outsourcing.weChat.api.facade.GoodsModelFacade;
-import com.zd.aoding.outsourcing.weChat.api.facade.GoodsOptionFacade;
-import com.zd.aoding.outsourcing.weChat.api.facade.GoodsSpecFacade;
-import com.zd.aoding.outsourcing.weChat.api.facade.GoodsSpecItemFacade;
-import com.zd.aoding.outsourcing.weChat.api.facade.RecordFacade;
-import com.zd.aoding.outsourcing.weChat.api.facade.SessionFacade;
-import com.zd.aoding.outsourcing.weChat.api.facade.StatisticFacade;
+import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.*;
+import com.zd.aoding.outsourcing.weChat.api.facade.*;
 import com.zd.aoding.outsourcing.weChat.api.utils.file.FileUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName: RegisterAccountController
@@ -716,6 +704,29 @@ public class GoodsDealerController {
                 JSONArray jsonArray = JSON.parseArray(jsonString);
                 resultMap.put("aaData", jsonArray);
                 return ResponseUtil.successResultString(goodsList);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseUtil.systemErrorResultString();
+        }
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "goodsSpec/allList", method = RequestMethod.POST, produces = "application/x-www-form-urlencoded;charset=utf-8")
+    @ApiOperation(value = "所有产品配置", httpMethod = "POST", notes = "查询全部产品", response = ResponseUtil.class)
+    public String getAllGoodsSpecList(
+            @ApiParam(required = true, name = "goodsId", value = "产品id") @RequestParam(value = "goodsId", required = true) String goodsId,
+    		HttpServletRequest request) {
+        try {
+            if (StringUtil.isNumber(goodsId)) {
+                List<GoodsOptionDO> listSpec = goodsOptionFacade.getOptionPoByGoodsId(Integer.parseInt(goodsId));
+                if (listSpec != null) {
+                    return ResponseUtil.successResultString(listSpec);
+                }
+                listSpec = new ArrayList<GoodsOptionDO>();
+                return ResponseUtil.successResultString(listSpec);
+            } else {
+                return ResponseUtil.showMSGResultString("查询失败");
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseUtil.systemErrorResultString();

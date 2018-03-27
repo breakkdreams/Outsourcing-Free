@@ -63,7 +63,7 @@ $(function() {
 				"render" : function(data, type, row) {
 					var html = "<a  onclick='specInfo("
 							+ row["goodsId"]
-							+ ",name)'>配货</a>&nbsp;";
+							+ ","+row["totalStock"]+")'>配货</a>&nbsp;";
 					return html;
 				}
 			} ]
@@ -73,8 +73,49 @@ $(function() {
 /*
  * 跳转界面
  */
-function specInfo(id) {
-	window.location.href = goodsSpecTablePageUrl + "?goodsId=" + id;
+function specInfo(id,totalStock) {
+    $("#myModal").modal('show');
+    var content = '';
+    $.ajax({
+        type : "post",
+        url : getAllGoodsSpecPage,
+        contentType : "application/x-www-form-urlencoded; charset=utf-8",
+        data : {
+            "goodsId" : id
+        },
+        dataType : "json",
+        async : false,
+        success : function(data) {
+            if (data.Code == "200") {
+                console.log(data)
+				var list = data.Response;
+                if(list.length>0){
+                    for (var i = 0; i < list.length; i++) {
+						content+='<tr><td><span><strong>配置:</strong>'+list[i].title+'</span></td>';
+						content+='<td><span><strong>库存:</strong>'+list[i].stock+'</span></td>';
+						content+='<td><strong>配送库存:</strong><input type="text" placeholder="请输入配送库存" style="margin-left: 5px;" id="spec_'+list[i].id+'" onkeyup="checkStock('+list[i].id+','+list[i].stock+')"></td>';
+                        content+='<td><button type="button" class="btn btn-primary">保存</button></td></tr>';
+                    }
+				}else{
+                    content+='<tr><td><span><strong>库存:</strong>'+totalStock+'</span></td>';
+                    content+='<td><strong>配送库存:</strong><input type="text" id="spec_0" onkeyup="checkStock(0,'+totalStock+')" placeholder="请输入配送库存" style="margin-left: 5px;"></td>';
+                    content+='<td><button type="button" class="btn btn-primary">保存</button></td></tr>';
+                }
+                document.getElementById("specInfo").innerHTML = content;
+            } else {
+                alert(data.Response);
+            }
+        }
+    });
+}
+
+function checkStock(id,stock) {
+	var inputStock = $("#spec_"+id).val();
+    $("#spec_"+id).val(inputStock.replace(/[^\d]/g,''));
+    if(inputStock>stock){
+		alert("不能大于库存数");
+        $("#spec_"+id).val(0);
+	}
 }
 /**
  * 刷新表格

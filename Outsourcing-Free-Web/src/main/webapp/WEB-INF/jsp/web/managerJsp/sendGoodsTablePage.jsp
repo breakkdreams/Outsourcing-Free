@@ -61,31 +61,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 		</div>
-		<%--<div class="modal fade" id="myModal" tabindex="-1" role="dialog"--%>
-			<%--aria-labelledby="myModalLabel" aria-hidden="true">--%>
-			<%--<div class="modal-dialog">--%>
-				<%--<div class="modal-content">--%>
-					<%--<div class="modal-header">--%>
-						<%--<button type="button" class="close" data-dismiss="modal"--%>
-							<%--aria-hidden="true">&times;</button>--%>
-						<%--<h4 class="modal-title" id="myModalLabel">修改价格库存</h4>--%>
-					<%--</div>--%>
-					<%--<div class="modal-body">--%>
-						<%--<input type="text" id="price" /> <label><input--%>
-							<%--type="radio" id="radio1" name="radio" onchange="radioChange(1)">在积分商城销售</label>--%>
-						<%--<label><input type="radio" id="radio2" name="radio"--%>
-							<%--onchange="radioChange(2)">在奖金商城销售</label> <input type="hidden"--%>
-							<%--id="goodsId" /> <input type="hidden" id="goodsType" /> <input--%>
-							<%--type="text" id="score" style="display: none;" /> <input--%>
-							<%--type="text" id="price" style="display: none;" />--%>
-					<%--</div>--%>
-					<%--<div class="modal-footer">--%>
-						<%--<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>--%>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">配货</h4>
+					</div>
+					<div class="modal-body">
+						<table id="specInfo" style="border-collapse: separate; border-spacing: 0px 10px; text-align: center;width: 100%;">
+
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 						<%--<button type="button" class="btn btn-primary">提交更改</button>--%>
-					<%--</div>--%>
-				<%--</div>--%>
-			<%--</div>--%>
-		<%--</div>--%>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<jsp:include page="/ad/manager/showMsg.web"></jsp:include>
