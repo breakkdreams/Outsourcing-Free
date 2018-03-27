@@ -463,3 +463,5 @@ var chargeParamEditUrl = 'ad/manager/chargeParam/edit.web';
 var getAllPostageUrl = 'ad/manager/postage/allList.web';
 var getPostageDetailUrl = 'ad/manager/postage/detail.web';
 var editPostageUrl = 'ad/manager/postage/edit.web';
+
+var sendGoodsPage = 'ad/manager/sendGoodsTablePage.web';

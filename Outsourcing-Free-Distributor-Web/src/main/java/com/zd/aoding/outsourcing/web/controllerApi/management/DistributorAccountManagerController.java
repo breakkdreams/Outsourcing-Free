@@ -107,7 +107,7 @@ public class DistributorAccountManagerController {
 		try {
 			List<Map<String, Object>> sess = (List<Map<String, Object>>) session.getAttribute("menuSession");//重点
 			AccountBO loginAccount = sessionFacade.checkLoginAccountSession(request);
-			RoleBO rv = new RoleBO(sess, "管理员管理添加");
+			RoleBO rv = new RoleBO(sess, "业务员管理添加");
 			if(rv.getRoleFalg().equals("1")) {
 				if(loginAccount == null){
 					return ResponseUtil.notLoggedResultString();
@@ -116,13 +116,13 @@ public class DistributorAccountManagerController {
 				if (account != null) {
 					return ResponseUtil.showMSGResultString("该手机号已注册");
 				}
-				AccountDO accountPo = new AccountDO(AccountDO.TYPE_DISTRIBUTOR, username, MD5Util.MD5(password));
-				int i = accountFacade.registerDistributor(accountPo, name, ManagerDO.TYPE_DISTRIBUTOR, 
+				AccountDO accountPo = new AccountDO(AccountDO.TYPE_RECURSIVE, username, MD5Util.MD5(password));
+				int i = accountFacade.registerDistributor(accountPo, name, ManagerDO.TYPE_RECURSIVE,
 						loginAccount.getAccountId(),loginAccount.getProvinceId());
 				if (i == 1) {
 					//操作日志
-					RecordsDO recordDO = new RecordsDO(RecordBase.LEVER_NORMAL, "", "添加经销商成功", RecordsDO.RECORDTYPE_MANAGER_ADD,
-    					RecordBase.DEALTYPE_MANAGER, loginAccount.getAccountId(), accountPo.getId(), "添加经销商", "");
+					RecordsDO recordDO = new RecordsDO(RecordBase.LEVER_NORMAL, "", "添加递推人员成功", RecordsDO.RECORDTYPE_MANAGER_ADD,
+    					RecordBase.DEALTYPE_MANAGER, loginAccount.getAccountId(), accountPo.getId(), "添加递推人员", "");
     				recordFacade.insertRecordDO(recordDO);
     				
 					return ResponseUtil.successResultString("添加成功");
@@ -229,7 +229,7 @@ public class DistributorAccountManagerController {
 			HttpServletRequest request) {
 		try {
 			List<Map<String, Object>> sess = (List<Map<String, Object>>) session.getAttribute("menuSession");//重点
-			RoleBO rv = new RoleBO(sess, "管理员管理修改");
+			RoleBO rv = new RoleBO(sess, "业务员管理修改");
 			if(rv.getRoleFalg().equals("1")) {
 				if (!StringUtil.isNumber(accountId)) {
 					return ResponseUtil.showMSGResultString("参数错误");
@@ -337,7 +337,7 @@ public class DistributorAccountManagerController {
 			HttpServletRequest request) {
 		try {
 			List<Map<String, Object>> sess = (List<Map<String, Object>>) session.getAttribute("menuSession");//重点
-			RoleBO rv = new RoleBO(sess, "管理员管理删除");
+			RoleBO rv = new RoleBO(sess, "业务员管理删除");
 			if(rv.getRoleFalg().equals("1")) {
 				if (!StringUtil.isNULL(accountId) && StringUtil.isNumber(accountId)) {
 					AccountDO accountPo = accountFacade.getPoByPK(Integer.parseInt(accountId));
@@ -432,7 +432,7 @@ public class DistributorAccountManagerController {
 			HttpServletRequest request) {
 		try {
 			List<Map<String, Object>> sess = (List<Map<String, Object>>) session.getAttribute("menuSession");//重点
-			RoleBO rv = new RoleBO(sess, "管理员管理查看");
+			RoleBO rv = new RoleBO(sess, "业务员管理查看");
 			if(rv.getRoleFalg().equals("1")) {
 				String sSearch = request.getParameter("sSearch");
 				// 初始化列表
@@ -453,7 +453,7 @@ public class DistributorAccountManagerController {
 				 */
 				Map<String, Object> param = new HashMap<String, Object>();
 				param.put("deleted", 0);
-				param.put("type",AccountDO.TYPE_DISTRIBUTOR);
+				param.put("type",AccountDO.TYPE_RECURSIVE);
 				if(account.getAccountId()!=1){
 					param.put("ownerId",account.getAccountId());
 				}

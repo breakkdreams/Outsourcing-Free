@@ -90,7 +90,9 @@ $(function() {
 								+ "<a onclick='deleted(" + row["accountId"]
 								+ ")'>删除</a>&nbsp;|&nbsp;"
 								+ "<a onclick='firstCharge(" + row["accountId"]
-								+ ")'>首充设置</a>&nbsp;";
+								+ ")'>首充设置</a>&nbsp;|&nbsp;"
+								+ "<a onclick='sendGoods(" + row["accountId"]
+								+ ")'>配货</a>&nbsp;";
 						return html;
 					}
 				} ]
@@ -105,6 +107,11 @@ function firstCharge(id) {
 
 function updateMenu(id) {
 	window.location.href= distributorEditPage + "?accountId="+id;
+}
+
+//配货
+function sendGoods(id) {
+    window.location.href= sendGoodsPage + "?accountId="+id;
 }
 
 function editDistributor() {
