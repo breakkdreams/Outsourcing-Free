@@ -79,19 +79,19 @@ $(function() {
 								return html;
 							}
 						},
-						{
-							"title" : "参加返利",
-							"data" : "id",
-							"render" : function(data, type, row) {
-								var html = '';
-								if(row["rebate"] == '1'){
-									html = "<input type='checkbox' checked='checked' id='rebate_"+row["goodsId"]+"' onclick='showRebate("+row["goodsId"]+")' />";
-								}else{
-									html = "<input type='checkbox' id='rebate_"+row["goodsId"]+"' onclick='showRebate("+row["goodsId"]+")' />";
-								}
-								return html;
-							}
-						},
+						// {
+						// 	"title" : "参加返利",
+						// 	"data" : "id",
+						// 	"render" : function(data, type, row) {
+						// 		var html = '';
+						// 		if(row["rebate"] == '1'){
+						// 			html = "<input type='checkbox' checked='checked' id='rebate_"+row["goodsId"]+"' onclick='showRebate("+row["goodsId"]+")' />";
+						// 		}else{
+						// 			html = "<input type='checkbox' id='rebate_"+row["goodsId"]+"' onclick='showRebate("+row["goodsId"]+")' />";
+						// 		}
+						// 		return html;
+						// 	}
+						// },
 						{
 							"title" : "操作",
 							"data" : "id"
@@ -100,7 +100,7 @@ $(function() {
 
 						{
 
-							"targets" : 6,
+							"targets" : 5,
 							"data" : "id",
 							"render" : function(data, type, row) {
 								var html = "<a  onclick='goodsSpecEdit("

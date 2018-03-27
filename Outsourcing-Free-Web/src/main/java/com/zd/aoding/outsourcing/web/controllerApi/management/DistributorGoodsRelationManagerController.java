@@ -108,6 +108,9 @@ public class DistributorGoodsRelationManagerController {
 					return ResponseUtil.showMSGResultString("请输入库存");
 				}
 				DistributorGoodsRelationDO distributorGoodsRelationDO = distributorGoodsRelationFacade.getDistributorGoodsRelationDOByPK(Integer.parseInt(distributorGoodsRelationId));
+				distributorGoodsRelationDO.setStock(Integer.parseInt(stock));
+				distributorGoodsRelationDO.setDistributorId(Integer.parseInt(distributorId));
+
 
 				int i = distributorGoodsRelationFacade.updateDistributorGoodsRelationDO(distributorGoodsRelationDO);
 				if (i == 1) {
