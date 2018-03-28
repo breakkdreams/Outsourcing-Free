@@ -87,7 +87,6 @@ function specInfo(id,totalStock) {
         async : false,
         success : function(data) {
             if (data.Code == "200") {
-                console.log(data)
 				var list = data.Response;
                 if(list.length>0){
                     for (var i = 0; i < list.length; i++) {
