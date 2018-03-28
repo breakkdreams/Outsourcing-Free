@@ -62,7 +62,21 @@ public class GoodsOptionFacadeImpl implements GoodsOptionFacade {
 		List<GoodsOptionDO> list = goodsOptionService.getList(param);
 		return list;
 	}
-	
+	@Override
+	public List<GoodsOptionBO> getOptionBOByGoodsId(Integer goodsId) {
+		Map<String, Object> param = new HashMap<String, Object>();
+		param.put("goodsId", goodsId);
+		param.put("deleted", 0);
+		List<GoodsOptionDO> list = goodsOptionService.getList(param);
+		List<GoodsOptionBO> listVo = new ArrayList<>();
+		if (list!=null && list.size()>0){
+			for (GoodsOptionDO goodsOptionDO : list) {
+				listVo.add(new GoodsOptionBO(goodsOptionDO));
+			}
+		}
+		return listVo;
+	}
+
 	private GoodsOptionDO getOneGoodsOptionPo(Map<String, Object> param) {
 		List<GoodsOptionDO> list = goodsOptionService.getList(param);
 		if (list != null) {

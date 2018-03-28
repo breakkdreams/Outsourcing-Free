@@ -467,3 +467,10 @@ var editPostageUrl = 'ad/manager/postage/edit.web';
 var sendGoodsPage = 'ad/manager/sendGoodsTablePage.web';
 var getAllGoodsSpecPage = 'ad/manager/dealer/goodsSpec/allList.web';
 
+/** **********************************************************distributorGoodsRelationPo********************************************** */
+
+var editDistributorGoodsRelation = 'ad/manager/distributorGoodsRelation/edit.web';
+var addDistributorGoodsRelation = 'ad/manager/distributorGoodsRelation/add.web';
+
+
+

@@ -10,10 +10,7 @@ import com.zd.aoding.common.StringDate.StringUtil;
 import com.zd.aoding.common.page.PageEntity;
 import com.zd.aoding.common.page.PageResult;
 import com.zd.aoding.common.response.ResponseUtil;
-import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.AccountBO;
-import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.GoodsBO;
-import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.GoodsSpecBO;
-import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.RoleBO;
+import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.*;
 import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.*;
 import com.zd.aoding.outsourcing.weChat.api.facade.*;
 import com.zd.aoding.outsourcing.weChat.api.utils.file.FileUtil;
@@ -27,7 +24,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -58,6 +54,8 @@ public class GoodsDealerController {
 	private RecordFacade recordFacade;
 	@Autowired
 	private SessionFacade sessionFacade;
+	@Autowired
+	private DistributorGoodsRelationFacade distributorGoodsRelationFacade;
 
     @ResponseBody
     @RequestMapping(value = "goods/add", method = RequestMethod.POST, produces = "application/x-www-form-urlencoded; charset=utf-8")
@@ -143,7 +141,7 @@ public class GoodsDealerController {
     					RecordsDO recordDO = new RecordsDO(RecordBase.LEVER_NORMAL, "", "添加成功", RecordsDO.RECORDTYPE_MANAGER_ADD,
     						RecordBase.DEALTYPE_MANAGER, account.getAccountId(), goodsDo.getId(), "添加产品售卖价:"+marketPrice+",库存:"+totalStock, "");
     					recordFacade.insertRecordDO(recordDO);
-    					
+
                         return ResponseUtil.successResultString("添加成功!");
                     }
                     return ResponseUtil.showMSGResultString("添加失败");
@@ -715,15 +713,46 @@ public class GoodsDealerController {
     @ApiOperation(value = "所有产品配置", httpMethod = "POST", notes = "查询全部产品", response = ResponseUtil.class)
     public String getAllGoodsSpecList(
             @ApiParam(required = true, name = "goodsId", value = "产品id") @RequestParam(value = "goodsId", required = true) String goodsId,
+            @ApiParam(required = false, name = "distributorId", value = "经销商id") @RequestParam(value = "distributorId", required = true) String distributorId,
     		HttpServletRequest request) {
         try {
             if (StringUtil.isNumber(goodsId)) {
-                List<GoodsOptionDO> listSpec = goodsOptionFacade.getOptionPoByGoodsId(Integer.parseInt(goodsId));
-                if (listSpec != null) {
+                List<GoodsOptionBO> listSpec = goodsOptionFacade.getOptionBOByGoodsId(Integer.parseInt(goodsId));
+                if (listSpec != null && listSpec.size()>0) {
+                    for (int i = 0; i <listSpec.size() ; i++) {
+                        Map<String,Object> param = new HashMap<String,Object>();
+                        param.put("deleted",0);
+                        param.put("distributorId",distributorId);
+                        param.put("goodsId",goodsId);
+                        param.put("optionId",listSpec.get(i).getGoodsOptionId());
+                        List<DistributorGoodsRelationDO> list = distributorGoodsRelationFacade.getList(param);
+                        if(list!=null && list.size()>0){
+                            int reStock = 0;
+                            for (int j = 0; j <list.size() ; j++) {
+                                reStock += list.get(j).getStock();
+                            }
+                            listSpec.get(i).setDistributorStock(reStock);
+                        }else{
+                            listSpec.get(i).setDistributorStock(0);
+                        }
+                    }
                     return ResponseUtil.successResultString(listSpec);
+                }else{
+                    Map<String,Object> resultMap = new HashMap<String,Object>();
+                    Map<String,Object> param = new HashMap<String,Object>();
+                    param.put("deleted",0);
+                    param.put("distributorId",distributorId);
+                    param.put("goodsId",goodsId);
+                    List<DistributorGoodsRelationDO> list = distributorGoodsRelationFacade.getList(param);
+                    int reStock = 0;
+                    if(list!=null && list.size()>0){
+                        for (int j = 0; j <list.size() ; j++) {
+                            reStock += list.get(j).getStock();
+                        }
+                    }
+                    resultMap.put("reStock",reStock);
+                    return ResponseUtil.successResultString(resultMap);
                 }
-                listSpec = new ArrayList<GoodsOptionDO>();
-                return ResponseUtil.successResultString(listSpec);
             } else {
                 return ResponseUtil.showMSGResultString("查询失败");
             }

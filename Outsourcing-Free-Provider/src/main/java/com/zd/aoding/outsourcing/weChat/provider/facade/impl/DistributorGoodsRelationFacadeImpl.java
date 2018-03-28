@@ -81,4 +81,9 @@ public class DistributorGoodsRelationFacadeImpl implements DistributorGoodsRelat
 			return 0;
 		}
 	}
+
+	@Override
+	public List<DistributorGoodsRelationDO> getList(Map<String, Object> param) {
+			return distributorGoodsRelationService.getList(param);
+	}
 }

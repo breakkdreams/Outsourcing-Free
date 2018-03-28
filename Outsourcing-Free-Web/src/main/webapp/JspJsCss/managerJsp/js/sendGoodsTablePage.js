@@ -75,30 +75,37 @@ $(function() {
  */
 function specInfo(id,totalStock) {
     $("#myModal").modal('show');
+    var distributorId = $("#distributorId").val();
     var content = '';
     $.ajax({
         type : "post",
         url : getAllGoodsSpecPage,
         contentType : "application/x-www-form-urlencoded; charset=utf-8",
         data : {
-            "goodsId" : id
+            "goodsId" : id,
+            "distributorId" : distributorId,
         },
         dataType : "json",
         async : false,
         success : function(data) {
             if (data.Code == "200") {
+            	console.log(data)
 				var list = data.Response;
                 if(list.length>0){
                     for (var i = 0; i < list.length; i++) {
 						content+='<tr><td><span><strong>配置:</strong>'+list[i].title+'</span></td>';
 						content+='<td><span><strong>库存:</strong>'+list[i].stock+'</span></td>';
-						content+='<td><strong>配送库存:</strong><input type="text" placeholder="请输入配送库存" style="margin-left: 5px;" id="spec_'+list[i].id+'" onkeyup="checkStock('+list[i].id+','+list[i].stock+')"></td>';
-                        content+='<td><button type="button" class="btn btn-primary">保存</button></td></tr>';
+						content+='<td><span><strong>经销商库存:</strong>'+list[i].distributorStock+'</span></td>';
+						content+='<input type="hidden" value="'+list[i].goodsId+'" id="goodsId_'+list[i].goodsOptionId+'">';
+						content+='<td><strong>配送库存:</strong><input type="text" placeholder="请输入配送库存" style="margin-left: 5px;" id="spec_'+list[i].goodsOptionId+'" onkeyup="checkStock('+list[i].goodsOptionId+','+list[i].stock+')"></td>';
+                        content+='<td><button type="button" class="btn btn-primary" onclick="save_('+list[i].goodsOptionId+')">保存</button></td></tr>';
                     }
 				}else{
+                    content+='<input type="hidden" value="'+id+'" id="goodsId_0">';
                     content+='<tr><td><span><strong>库存:</strong>'+totalStock+'</span></td>';
+                    content+='<td><span><strong>经销商库存:</strong>'+list.reStock+'</span></td>';
                     content+='<td><strong>配送库存:</strong><input type="text" id="spec_0" onkeyup="checkStock(0,'+totalStock+')" placeholder="请输入配送库存" style="margin-left: 5px;"></td>';
-                    content+='<td><button type="button" class="btn btn-primary">保存</button></td></tr>';
+                    content+='<td><button type="button" class="btn btn-primary" onclick="save_(0)">保存</button></td></tr>';
                 }
                 document.getElementById("specInfo").innerHTML = content;
             } else {
@@ -115,6 +122,32 @@ function checkStock(id,stock) {
 		alert("不能大于库存数");
         $("#spec_"+id).val(0);
 	}
+}
+
+function save_(id) {
+	var stock = $("#spec_"+id).val();
+	var goodsId = $("#goodsId_"+id).val();
+	var distributorId = $("#distributorId").val();
+    $.ajax({
+        type : "post",
+        url : addDistributorGoodsRelation,
+        contentType : "application/x-www-form-urlencoded; charset=utf-8",
+        data : {
+            "distributorId" : distributorId,
+            "goodsId" : goodsId,
+            "optionId" : id,
+            "stock" : stock,
+        },
+        dataType : "json",
+        async : false,
+        success : function(data) {
+            alert(data.Response);
+            if (data.Code == "200") {
+                $("#myModal").modal('hide');
+                refreshActivityTable();
+            }
+        }
+    });
 }
 /**
  * 刷新表格

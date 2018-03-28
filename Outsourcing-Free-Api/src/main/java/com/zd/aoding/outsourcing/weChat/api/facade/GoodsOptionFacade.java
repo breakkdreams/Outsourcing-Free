@@ -19,6 +19,7 @@ public interface GoodsOptionFacade {
 	 */
 	GoodsOptionBO getOptionVoBySpecIds(String specItemIds, String goodsId);
 	List<GoodsOptionDO> getOptionPoByGoodsId(Integer goodsId);
+	List<GoodsOptionBO> getOptionBOByGoodsId(Integer goodsId);
 	/**
 	 * @Title: getOptionVoByPK
 	 * @Description: 根据id查询option
@@ -33,7 +34,6 @@ public interface GoodsOptionFacade {
 	/**
 	 * @Title: deletedAllOptionByGoodsId
 	 * @Description: TODO
-	 * @param goodsId
 	 * @return
 	 * @return: int
 	 */

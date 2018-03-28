@@ -45,6 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</ol>
 				</div>
 			</div>
+			<input type="hidden" value="${param.accountId}" id="distributorId">
 			<div class="wrapper wrapper-content animated fadeInRight">
 				<div class="row">
 					<div class="col-lg-12">

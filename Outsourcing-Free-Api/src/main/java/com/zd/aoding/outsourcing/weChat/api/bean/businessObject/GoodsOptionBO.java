@@ -36,7 +36,9 @@ public class GoodsOptionBO {
 	private Double scorePrice;
 	@ApiModelProperty("产品该配置奖金价格")
 	private Double bonusPrice;
-	
+	@ApiModelProperty("经销商库存")
+	private Integer distributorStock;
+
 	
 	public GoodsOptionBO() {
 		super();
@@ -148,5 +150,13 @@ public class GoodsOptionBO {
 	}
 	public void setBonusPrice(Double bonusPrice) {
 		this.bonusPrice = bonusPrice;
+	}
+
+	public Integer getDistributorStock() {
+		return distributorStock;
+	}
+
+	public void setDistributorStock(Integer distributorStock) {
+		this.distributorStock = distributorStock;
 	}
 }
