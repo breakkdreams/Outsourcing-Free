@@ -4,7 +4,11 @@ import com.zd.aoding.common.page.PageEntity;
 import com.zd.aoding.common.page.PageResult;
 import com.zd.aoding.outsourcing.weChat.api.bean.businessObject.DistributorGoodsRelationBO;
 import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.DistributorGoodsRelationDO;
+import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsDO;
+import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.GoodsOptionDO;
 import com.zd.aoding.outsourcing.weChat.api.facade.DistributorGoodsRelationFacade;
+import com.zd.aoding.outsourcing.weChat.api.facade.GoodsFacade;
+import com.zd.aoding.outsourcing.weChat.api.facade.GoodsOptionFacade;
 import com.zd.aoding.outsourcing.weChat.api.services.mysql.DistributorGoodsRelationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +23,10 @@ import java.util.Map;
 public class DistributorGoodsRelationFacadeImpl implements DistributorGoodsRelationFacade {
 	@Autowired
 	private DistributorGoodsRelationService distributorGoodsRelationService;
+	@Autowired
+	private GoodsFacade goodsFacade;
+	@Autowired
+	private GoodsOptionFacade goodsOptionFacade;
 
 	@Override
 	public int insertDistributorGoodsRelationDO(DistributorGoodsRelationDO distributorGoodsRelationDO) {
@@ -62,7 +70,7 @@ public class DistributorGoodsRelationFacadeImpl implements DistributorGoodsRelat
 		List<DistributorGoodsRelationBO> listVo = new ArrayList<>();
 		if (list != null && list.size() > 0) {
 			for (DistributorGoodsRelationDO distributorGoodsRelationPo : list) {
-				listVo.add(new DistributorGoodsRelationBO(distributorGoodsRelationPo));
+				listVo.add(view(distributorGoodsRelationPo));
 			}
 		}
 		pageResult.setResultList(listVo);
@@ -70,6 +78,28 @@ public class DistributorGoodsRelationFacadeImpl implements DistributorGoodsRelat
 		pageResult.setPageSize(pageEntity.getSize());
 		pageResult.setTotalSize(distributorGoodsRelationService.count(pageEntity.getParams()));
 		return pageResult;
+	}
+
+
+	private DistributorGoodsRelationBO view(DistributorGoodsRelationDO distributorGoodsRelationPo){
+		DistributorGoodsRelationBO distributorGoodsRelationBO = new DistributorGoodsRelationBO(distributorGoodsRelationPo);
+
+		String goodsName = "";
+		String optionName = "";
+
+		GoodsDO goodsDO = goodsFacade.getGoodsPoByPK(distributorGoodsRelationPo.getGoodsId());
+		if(goodsDO!=null){
+			goodsName = goodsDO.getTitle();
+		}
+		if(distributorGoodsRelationPo.getHaveOption() == 1){
+			GoodsOptionDO goodsOptionDO = goodsOptionFacade.getOptionPoByPK(distributorGoodsRelationPo.getOptionId());
+			if(goodsOptionDO!=null){
+				optionName = goodsOptionDO.getTitle();
+			}
+		}
+		distributorGoodsRelationBO.setOptionName(optionName);
+		distributorGoodsRelationBO.setGoodsName(goodsName);
+		return distributorGoodsRelationBO;
 	}
 
 	@Override

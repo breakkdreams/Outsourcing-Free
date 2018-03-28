@@ -469,8 +469,9 @@ var getAllGoodsSpecPage = 'ad/manager/dealer/goodsSpec/allList.web';
 
 /** **********************************************************distributorGoodsRelationPo********************************************** */
 
-var editDistributorGoodsRelation = 'ad/manager/distributorGoodsRelation/edit.web';
 var addDistributorGoodsRelation = 'ad/manager/distributorGoodsRelation/add.web';
+var distributorGoodsRelationDTUrl = 'ad/manager/distributorGoodsRelation/DTPaging.web';
+var distributorGoodsRelationUrl = 'ad/manager/distributorGoodsRelationUrlTablePage.web';
 
 
 

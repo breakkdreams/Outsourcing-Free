@@ -2,6 +2,7 @@ package com.zd.aoding.outsourcing.weChat.api.bean.businessObject;
 
 import com.wordnik.swagger.annotations.ApiModel;
 import com.wordnik.swagger.annotations.ApiModelProperty;
+import com.zd.aoding.common.StringDate.DateUtil;
 import com.zd.aoding.outsourcing.weChat.api.bean.dataObject.DistributorGoodsRelationDO;
 
 @ApiModel(value = "", description = "关于我们展示类")
@@ -26,6 +27,12 @@ public class DistributorGoodsRelationBO {
 	private Integer thirdCatagory;
 	@ApiModelProperty("库存")
 	private Integer stock;
+	@ApiModelProperty("时间")
+	private String timeStr;
+	@ApiModelProperty("商品名称")
+	private String goodsName;
+	@ApiModelProperty("配置名称")
+	private String optionName;
 
 
 	public DistributorGoodsRelationBO(DistributorGoodsRelationDO distributorGoodsRelationDO) {
@@ -40,6 +47,7 @@ public class DistributorGoodsRelationBO {
 		this.secondCatagory = distributorGoodsRelationDO.getSecondCatagory();
 		this.thirdCatagory = distributorGoodsRelationDO.getThirdCatagory();
 		this.stock = distributorGoodsRelationDO.getStock();
+		this.timeStr = DateUtil.Format("yyyy-MM-dd HH:mm", distributorGoodsRelationDO.getCreateTime());
 	}
 
 	public Integer getDistributorGoodsRelationId() {
@@ -120,5 +128,29 @@ public class DistributorGoodsRelationBO {
 
 	public void setStock(Integer stock) {
 		this.stock = stock;
+	}
+
+	public String getTimeStr() {
+		return timeStr;
+	}
+
+	public void setTimeStr(String timeStr) {
+		this.timeStr = timeStr;
+	}
+
+	public String getGoodsName() {
+		return goodsName;
+	}
+
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
+	}
+
+	public String getOptionName() {
+		return optionName;
+	}
+
+	public void setOptionName(String optionName) {
+		this.optionName = optionName;
 	}
 }
